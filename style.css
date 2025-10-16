@@ -756,7 +756,6 @@ footer .bottom-line {
 }
 
 
-
 /* ===================== RESPONSIVE DESIGN ===================== */
 
 /* للأجهزة المتوسطة مثل التابلت */
@@ -928,4 +927,15 @@ footer .bottom-line {
     padding: 1rem 0;
   }
 
-  .video-card
+  .video-card {
+    width: 100%;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+}
