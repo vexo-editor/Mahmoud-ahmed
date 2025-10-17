@@ -24,3 +24,19 @@ window.addEventListener('scroll', () => {
     header.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
   }
 });
+
+
+  const cards = document.querySelectorAll('.testimonial-card');
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  cards.forEach(card => observer.observe(card));
