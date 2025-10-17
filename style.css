@@ -319,7 +319,7 @@ span {
 }
 
 .about-content .text-animation span::before {
-    content: 'web Developer';
+    content: 'video editor';
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -350,101 +350,123 @@ span {
     width: 50px;
 }
 
-section.services {
-    background-color: var(--second-bg-color);
-    padding: 10rem 5% 10rem 5%;
+/* PLANS SECTION */
+.plans {
+  background: #1b0000;
+  padding: 80px 10%;
+  text-align: center;
+  color: #fff;
 }
 
-
-.services-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    max-width: 1200px; /* ضبط العرض الأقصى للحاوية */
+.plans .heading {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
-.services-content .services-box {
-    position: relative;
-    background-color: #fff;
-    padding: 2rem 0;
-    transition: .3s ease;
-}
-.services-content .services-box:hover{
-    transform: translate(0, -10px);
+.plans .heading span {
+  color: #f60b0b;
 }
 
-.services-content .services-box .services-info .head {
-    text-align: center;
-    font-size: 3.5rem;
-    margin: 1rem 0;
-    color: #000;
+.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-.services-content .services-box .services-info .image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.plan-card {
+  background: #2a0000;
+  border: 2px solid #f60b0b;
+  border-radius: 20px;
+  width: 320px;
+  padding: 40px 25px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 0 15px rgba(246, 11, 11, 0.2);
+  transition: 0.3s;
 }
 
-.services-content .services-box .services-info img {
-    width: 140px;
-    margin: 10px 0;
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(246, 11, 11, 0.5);
 }
 
-.services-content .services-box .services-info .sallry {
-    text-align: center;
-    font-size: 3.5rem;
-    margin: 1.5rem 0;
-    color: var(--main-color);
+.plan-card .plan-name {
+  color: #f60b0b;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
 }
 
-
-.services-content .services-box .services-info ul li {
-    color: #000000ad;
-    padding: 20px;
-    font-size: 2rem;
-    border-top: 2px solid #eee;
-    transition: .3s ease;
-}
-.services-content .services-box .services-info ul li:hover{
-    padding-left: 35px;
+.plan-card .plan-desc {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 15px;
 }
 
-.services-content .services-box .services-info ul li i {
-    font-size: 16px;
-    color: var(--main-color);
-    margin-right: 10px;
+.plan-card .plan-price {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
-.services-content .services-box .services-info .button-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
+.plan-card .plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
-.services-content .services-box .services-info .button-btn .btn {
-    width: fit-content;
-    border: 2px solid var(--main-color);
-    color: var(--main-color);
-    padding: 15px 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: .3s ease;
-    background-color: transparent;
-    box-shadow: none;
+.plan-card .plan-features li {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #ddd;
 }
 
-.services-content .services-box .services-info .button-btn .btn:hover {
-    background-color: var(--main-color);
-    color: #fff;
-    transform: none;
+.btn-plan {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  background: #f60b0b;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
 }
+
+.btn-plan:hover {
+  background: #ff2c2c;
+  box-shadow: 0 0 15px rgba(246, 11, 11, 0.5);
+}
+
+/* POPULAR PLAN */
+.popular {
+  border: 2px solid #fff;
+  background: linear-gradient(180deg, #f60b0b 0%, #1b0000 100%);
+  transform: scale(1.05);
+}
+
+.popular .plan-name {
+  color: #fff;
+}
+
+.popular .plan-price {
+  color: #fff;
+}
+
+.tag {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  background: #fff;
+  color: #f60b0b;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 
 /* ===== MY BEST EDITS ===== */
 .best-edits {
@@ -686,7 +708,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #6366f1;
+  color: #ff2323;
 }
 
 /* Social Icons */
@@ -703,18 +725,18 @@ footer ul li a:hover {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: linear-gradient(135deg, #6366f1, #9333ea);
+  background: linear-gradient(135deg, #f16363, #ea3333);
   color: #fff;
   font-size: 18px;
   transition: all 0.3s ease;
 }
 
 .socials a.instagram {
-  background: linear-gradient(135deg, #f093fb, #f5576c);
+  background: linear-gradient(135deg, #fb9393, #f71634);
 }
 
 .socials a.whatsapp {
-  background: linear-gradient(135deg, #25d366, #128c7e);
+  background: linear-gradient(135deg, #ff1919, #8c1212);
 }
 
 .socials a.youtube {
@@ -723,7 +745,7 @@ footer ul li a:hover {
 
 .socials a:hover {
   transform: scale(1.15);
-  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 0 15px rgba(255, 18, 18, 0.4);
 }
 
 /* Bottom line */
