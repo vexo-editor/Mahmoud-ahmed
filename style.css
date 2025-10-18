@@ -6,7 +6,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
+  font-family: "Almarai", sans-serif;
     box-sizing: border-box;
 }
 
@@ -691,6 +691,9 @@ padding: 27rem 12% 10rem;
 .social-links i {
   margin-right: 10px;
   font-size: 1.2rem;
+}
+#titlew{
+  text-align: right;
 }
 
 @keyframes fadeIn {
