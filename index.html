@@ -49,6 +49,11 @@
     ]
   }
   </script>
+  <!-- Language Versions -->
+<link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/" hreflang="en" />
+<link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/ar/" hreflang="ar" />
+<link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/" hreflang="x-default" />
+
   </head>
 
 <body>
@@ -419,9 +424,20 @@ function sendMessage(e) {
   alert('Thank you! Your message has been sent successfully.');
 }
 </script>
+<!-- Auto Redirect by Language -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const userLang = navigator.language || navigator.userLanguage;
+  if (userLang && userLang.startsWith("ar")) {
+    // لو اللغة عربية والنسخة الحالية مش عربية
+    if (!window.location.href.includes("/ar/")) {
+      window.location.href = "https://vexo-editor.github.io/Mahmoud-ahmed/ar/";
+    }
+  }
+});
+</script>
 
     <script src="main.js"></script>
 </body>
 
 </html>
-
