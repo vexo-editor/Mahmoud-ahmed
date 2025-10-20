@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://vexo-editor.github.io/Mahmoud-ahmed/sitemap.xml
+
+Disallow: /sitemap
