@@ -431,6 +431,8 @@ span {
   text-decoration: none;
   transition: 0.3s;
   font-weight: bold;
+  font-size: 14px;
+
 }
 
 .btn-plan:hover {
@@ -1121,3 +1123,4 @@ display: none;
     max-height: 260px;
   }
 }
+
