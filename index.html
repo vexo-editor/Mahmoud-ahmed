@@ -1,561 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Basic Meta -->
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Basic Meta -->
+    <meta name="robots" content="noindex, follow">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Vexo Editor | Mahmoud Ahmed - Short-Form Conversion Video Editor</title>
-  <meta name="description" content="Short-form video editing for coaches, brands, and businesses. I craft high-retention Reels/TikToks/Shorts designed to convert views into leads & sales." />
-  <meta name="keywords" content="Vexo Editor, Mahmoud Ahmed, video editor, short form, reels editor, tiktok editor, youtube shorts, ads editing, coach marketing, business videos" />
+  <title>Vexo Editor | Mahmoud Ahmed - Video Editor</title>
+  <meta name="description" content="Vexo Editor – موقع شخصي لمحمود أحمد، محرر فيديو محترف يقدم خدمات المونتاج للفيديوهات القصيرة والمشاريع الإبداعية بجودة عالية وسرعة تنفيذ." />
+  <meta name="keywords" content="Vexo Editor, Mahmoud Ahmed, video editor, مونتاج, محرر فيديو, short videos, reels, TikTok, YouTube shorts, freelancer" />
   <meta name="author" content="Mahmoud Ahmed" />
   <meta name="robots" content="index, follow" />
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://vexo-editor.github.io/Mahmoud-ahmed/" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph (For Facebook & LinkedIn) -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vexo-editor.github.io/Mahmoud-ahmed/" />
-  <meta property="og:title" content="Vexo Editor | Short-Form Videos That Turn Views Into Sales" />
-  <meta property="og:description" content="High-retention short-form video editing for coaches, brands, and businesses. Built for conversion: hooks, pacing, captions, and clear CTAs." />
+  <meta property="og:title" content="Vexo Editor | Mahmoud Ahmed - Video Editor" />
+  <meta property="og:description" content="موقع شخصي لمحمود أحمد، محرر فيديو محترف بخبرة في المونتاج الإبداعي للفيديوهات القصيرة والمحتوى الرقمي." />
   <meta property="og:image" content="https://vexo-editor.github.io/Mahmoud-ahmed/Mahmoud.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://vexo-editor.github.io/Mahmoud-ahmed/" />
-  <meta name="twitter:title" content="Vexo Editor | Short-Form Videos That Turn Views Into Sales" />
-  <meta name="twitter:description" content="High-retention short-form video editing for coaches, brands, and businesses — optimized for conversion." />
+  <meta name="twitter:title" content="Vexo Editor | Mahmoud Ahmed - Video Editor" />
+  <meta name="twitter:description" content="موقع شخصي لمحمود أحمد، محرر فيديو محترف بخبرة في المونتاج للفيديوهات القصيرة." />
   <meta name="twitter:image" content="https://vexo-editor.github.io/Mahmoud-ahmed/Mahmoud.png" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="https://vexo-editor.github.io/Mahmoud-ahmed/Mahmoud.png" />
 
-  <!-- Structured Data -->
+  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Mahmoud Ahmed",
     "url": "https://vexo-editor.github.io/Mahmoud-ahmed/",
-    "jobTitle": "Short-Form Conversion Video Editor",
+    "jobTitle": "Video Editor",
     "brand": "Vexo Editor",
     "sameAs": [
       "https://www.instagram.com/vexo_editor/",
-      "https://www.tiktok.com/@vexo_editor",
-      "https://www.youtube.com/@vexo_editor",
       "https://t.me/Vexo_editor_1"
     ]
   }
   </script>
-
   <!-- Language Versions -->
-  <link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/" hreflang="en" />
-  <link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/ar/" hreflang="ar" />
-  <link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/" hreflang="x-default" />
-</head>
+<link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/" hreflang="en" />
+<link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/ar/" hreflang="ar" />
+<link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/" hreflang="x-default" />
+
+  </head>
 
 <body>
+    <header class="header">
+        <a href="#home" class="logo">
+            Mahm<span class="">oud</span>
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
 
-  <header class="header">
-    <a href="#home" class="logo">
-      Mahm<span class="">oud</span>
-    </a>
-    <i class="bx bx-menu" id="menu-icon"></i>
-
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#fit">Fit</a>
-      <a href="#how">How It Works</a>
-      <a href="#plans">Plans</a>
-      <a href="#projects">Work</a>
-      <a href="#apply">Apply</a>
-    </nav>
-  </header>
-
-  <!-- HERO -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <h1>
-        Short-Form Videos That Turn <span>Views</span> Into <span>Sales</span>
-      </h1>
-
-      <h3 class="text-animation">
-        I'm a <span>Short-Form Conversion Video Editor</span>
-      </h3>
-
-      <p>
-        I help <b>coaches, brands, and businesses</b> grow on Instagram with high-retention Reels
-        designed to <b>convert attention into leads & sales</b> — through stronger hooks, tighter pacing,
-        clear CTAs, and consistent brand style.
-      </p>
-
-      <div class="social-icons">
-        <a href="https://t.me/Vexo_editor_1" aria-label="Telegram"><i class="bx bxl-telegram" style="margin-right: 5px;"></i></a>
-        <a href="https://www.tiktok.com/@vexo_editor" aria-label="TikTok"><i class='bx bxl-tiktok'></i></a>
-        <a href="https://www.instagram.com/vexo_editor/" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-        <a href="https://www.youtube.com/@vexo_editor" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
-      </div>
-
-      <div class="btn-groub">
-        <a href="#apply" class="btn">Get a Custom Offer</a>
-        <a href="#projects" class="btn">See My Work</a>
-      </div>
-
-      <!-- QUICK TRUST -->
-      <div style="margin-top:18px; opacity:.95; line-height:1.6;">
-        <small>
-          ✅ Built for businesses • ✅ Brand-matching captions • ✅ Strong hooks (0–3s) • ✅ Fast delivery
-        </small>
-      </div>
-    </div>
-
-    <div class="home-image">
-      <img src="Mahmoud.png" alt="Mahmoud Ahmed - Vexo Editor">
-    </div>
-  </section>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#plans">Plans</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
 
-  <!-- WHO IT'S FOR / NOT FOR -->
-  <section class="about-section" id="fit">
-    <div class="container">
-      <div class="about-left">
-        <h2 class="about-title">Is This a <span>Good Fit</span>?</h2>
-        <h3 class="about-subtitle">For businesses that want results — not cheap edits.</h3>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi , iam <span>Mahmoud</span></h1>
+            <h3 class="text-animation">
+                I'm a <span></span>
+            </h3>
 
-        <p class="about-text" style="margin-bottom:16px;">
-          This service is designed for people who sell something:
-          a product, service, or course — and use short-form video to generate customers.
-        </p>
+            <p>I offer professional video editing services that bring your vision to life and capture your audience’s attention from the very first second. Whether it’s a commercial, social media content, or a personal project, I deliver creative, high-quality edits with attention to every detail. My goal is to make every video reflect your identity and leave a lasting impact.</p>
 
-        <ul style="margin: 0 0 18px 0; padding-left: 18px; line-height: 1.8;">
-          <li>✔ Coaches & course creators</li>
-          <li>✔ Brands & businesses running offers or ads</li>
-          <li>✔ Service providers who want more leads from Instagram</li>
-        </ul>
-
-        <div style="border:1px solid rgba(255,255,255,.15); border-radius:12px; padding:14px; margin-bottom:18px;">
-          <b>Not for:</b>
-          <div style="opacity:.95; margin-top:6px;">
-            Personal/hobby videos, random editing requests, or anyone seeking “the cheapest editor”.
-          </div>
+            <div class="social-icons">
+                <a href="https://t.me/Vexo_editor_1"><i class="bx bxl-telegram" style="margin-right: 5px;"></i></a>
+                <a href="https://www.tiktok.com/@vexo_editor"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://www.instagram.com/vexo_editor/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.youtube.com/@vexo_editor"><i class='bx bxl-youtube'></i></a>
+            </div>
+            <div class="btn-groub">
+                <a href="#contact" class="btn">Hire</a>
+                <a href="https://wa.me/201017574173?text=Hi%20Mahmoud!%20I'm%20interested%20in%20purchasing%20your%20video%20editing%20service.%20Can%20you%20please%20share%20the%20details%20and%20pricing%3F" class="btn">Contact</a>
+            </div>
         </div>
-
-        <a href="#apply" class="about-btn">Apply for a Custom Offer</a>
-      </div>
-
-      <div class="about-right">
-        <div class="about-image-wrapper">
-          <img src="f37ec55a8e7df84573423d611796ea91.jpg" alt="Brand / Business Visual" class="about-image">
+        <div class="home-image">
+            <img src="Mahmoud.png" alt="">
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-
-  <!-- HOW IT WORKS / WHAT I IMPROVE -->
-  <section class="plans" id="how">
-    <h2 class="heading">What I <span>Actually Improve</span></h2>
-    <p class="plans-subtitle" style="text-align:center; max-width:820px; margin:10px auto 40px;">
-      Most editors sell transitions. I focus on performance: retention, clarity, and conversion.
-      Your videos are edited to keep attention and push the viewer to take action.
-    </p>
-
-    <div class="plans-container">
-      <div class="plan-card">
-        <h3 class="plan-name">Stronger Hooks (0–3s)</h3>
-        <p class="plan-desc">Stop the scroll immediately and keep them watching.</p>
-        <ul class="plan-features">
-          <li>🎯 Hook restructuring + pacing fixes</li>
-          <li>✂️ Remove dead moments</li>
-          <li>🧠 Clear opening promise</li>
-        </ul>
-        <a href="#apply" class="btn-plan">Get a Custom Offer</a>
-      </div>
-
-      <div class="plan-card popular">
-        <div class="tag">Business Focus</div>
-        <h3 class="plan-name">Retention + Watch Time</h3>
-        <p class="plan-desc">Editing built to increase completion rate and engagement.</p>
-        <ul class="plan-features">
-          <li>⏱️ Tight cuts & rhythm matching</li>
-          <li>🔊 Audio cleanup + music timing</li>
-          <li>📌 Pattern breaks & on-screen emphasis</li>
-        </ul>
-        <a href="#apply" class="btn-plan">Apply Now</a>
-      </div>
-
-      <div class="plan-card">
-        <h3 class="plan-name">Clear CTA That Converts</h3>
-        <p class="plan-desc">Make viewers take action: DM, click, buy, book, or inquire.</p>
-        <ul class="plan-features">
-          <li>🧩 Caption style matching your brand</li>
-          <li>📣 Call-to-action placement</li>
-          <li>🎨 Consistent brand visuals</li>
-        </ul>
-        <a href="#apply" class="btn-plan">Get Custom Quote</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- PLANS -->
-  <section class="plans" id="plans">
-    <h2 class="heading">Choose Your <span>Collaboration</span></h2>
-    <p class="plans-subtitle" style="text-align:center; max-width:820px; margin:10px auto 40px;">
-      Packages are based on your publishing consistency and business goals.
-      I’ll send a custom offer after you apply.
-    </p>
-
-    <div class="plans-container">
-      <!-- Starter -->
-      <div class="plan-card">
-        <h3 class="plan-name">Starter (Test Phase)</h3>
-        <p class="plan-desc">Perfect to test my style & performance with a small batch.</p>
-        <ul class="plan-features">
-          <li>🎬 3 short-form videos (Reels / TikTok / Shorts)</li>
-          <li>⚡ Hook + pacing optimized for retention</li>
-          <li>💬 Brand-matching captions</li>
-          <li>📣 Clear CTA placement</li>
-          <li>♻️ 1 revision per video</li>
-        </ul>
-        <a href="#apply" class="btn-plan">Apply for Starter</a>
-      </div>
-
-      <!-- Growth -->
-      <div class="plan-card popular">
-        <div class="tag">Most Requested</div>
-        <h3 class="plan-name">Growth (Monthly)</h3>
-        <p class="plan-desc">Best for coaches & businesses posting consistently.</p>
-        <ul class="plan-features">
-          <li>📅 8 videos / month</li>
-          <li>🧠 Support with hooks & structure</li>
-          <li>🎨 Consistent brand style</li>
-          <li>⏱️ Priority delivery</li>
-          <li>♻️ Revisions as agreed</li>
-        </ul>
-        <a href="#apply" class="btn-plan">Apply for Growth</a>
-      </div>
-
-      <!-- Scale -->
-      <div class="plan-card">
-        <h3 class="plan-name">Scale (High Volume)</h3>
-        <p class="plan-desc">For brands scaling content, launches, or ad creatives.</p>
-        <ul class="plan-features">
-          <li>🚀 20 videos / month</li>
-          <li>🏷️ Full brand system: captions + visual identity</li>
-          <li>📊 Best for ads, offers, and lead generation</li>
-          <li>🤝 Dedicated collaboration workflow</li>
-          <li>♻️ Revisions (fair use policy)</li>
-        </ul>
-        <a href="#apply" class="btn-plan">Apply for Scale</a>
-      </div>
-    </div>
-
-    <!-- RISK REVERSAL -->
-    <div style="max-width:920px; margin: 40px auto 0; padding: 18px; border:1px solid rgba(255,255,255,.15); border-radius:14px; text-align:center;">
-      <h3 style="margin-bottom:8px;">Risk Reversal ✅</h3>
-      <p style="opacity:.95; margin:0;">
-        If the first edit doesn’t match your brand style, I’ll revise it until it fits — so you can confidently continue.
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-left">
+      <h2 class="about-title">About <span>Me</span></h2>
+      <h3 class="about-subtitle">Video Editor & Visual Storyteller</h3>
+      <p class="about-text">
+        With a passion for crafting cinematic visuals and sharp storytelling, I transform raw footage into compelling content that engages and retains audiences.  
+        From color grading and pacing to sound design and transitions, every detail is tuned to your brand's style.  
+        Let me bring your vision to life in a video that resonates.
       </p>
+      <a href="#contact" class="about-btn">Hire Me</a>
     </div>
-  </section>
+    <div class="about-right">
+      <div class="about-image-wrapper">
+        <img src="f37ec55a8e7df84573423d611796ea91.jpg" alt="Mahmoud" class="about-image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="plans" id="plans">
+  <h2 class="heading">Get Your <span>Custom Offer</span></h2>
+  <p class="plans-subtitle" style="text-align:center; max-width:700px; margin:10px auto 40px;">
+    My pricing is flexible and depends on the number of videos, content length, and the style you're aiming for. 
+    Choose the type of collaboration that fits your needs and contact me to receive your custom quote.
+  </p>
+
+  <div class="plans-container">
+
+    <!-- PLAN 1: Single Video -->
+    <div class="plan-card">
+      <h3 class="plan-name">Single Video Edit</h3>
+      <p class="plan-desc">Perfect if you want to test my editing style with one video.</p>
+      <ul class="plan-features">
+        <li>🎬 Professional editing for short-form videos (Reels / TikTok / Shorts)</li>
+        <li>🎨 Clean color correction & optimized framing</li>
+        <li>💬 Subtitles matching your brand style</li>
+        <li>⚡ Strong hook in the first 3 seconds</li>
+        <li>♻️ One free revision</li>
+      </ul>
+      <a href="https://wa.me/201017574173?text=Hi%20Mahmoud!%20I'd%20like%20a%20custom%20price%20for%20a%20single%20video%20edit." 
+         class="btn-plan">Get Custom Quote</a>
+    </div>
+
+    <!-- PLAN 2: Content Partner -->
+    <div class="plan-card popular">
+      <div class="tag">Most Requested</div>
+      <h3 class="plan-name">Content Partner</h3>
+      <p class="plan-desc">Best for creators who post consistently and need a reliable editor.</p>
+      <ul class="plan-features">
+        <li>📅 Weekly or monthly videos (as agreed)</li>
+        <li>🧠 Support with ideas, hooks & content structure</li>
+        <li>🎨 Consistent branding & style for your channel</li>
+        <li>⏱️ Priority delivery</li>
+        <li>♻️ Revisions based on agreement</li>
+      </ul>
+      <a href="https://wa.me/201017574173?text=Hi%20Mahmoud!%20I'm%20a%20regular%20content%20creator%20and%20would%20like%20a%20custom%20offer%20for%20multiple%20videos." 
+         class="btn-plan">Request Partnership Offer</a>
+    </div>
+
+    <!-- PLAN 3: Business / Course Package -->
+    <div class="plan-card">
+      <h3 class="plan-name">Business / Course Package</h3>
+      <p class="plan-desc">Ideal for businesses or course creators who need full editing support.</p>
+      <ul class="plan-features">
+        <li>🏢 Editing for educational videos, courses or brand content</li>
+        <li>📚 Organization & structuring of lessons or episodes</li>
+        <li>🎯 Fixed visual identity matching your brand</li>
+        <li>📊 Optional educational elements (Titles – Highlights – On-screen notes)</li>
+        <li>🤝 Fully customized plan based on project size</li>
+      </ul>
+      <a href="https://wa.me/201017574173?text=Hi%20Mahmoud!%20I%20have%20a%20business%20or%20course%20project%20and%20need%20a%20custom%20video%20editing%20offer." 
+         class="btn-plan">Get Business Offer</a>
+    </div>
+
+  </div>
+</section>
 
 
-  <!-- WORK -->
+     <!-- MY BEST EDITS -->
   <section class="best-edits" id="projects">
-    <h2>WORK <span style="color:#bd1313;">SAMPLES</span></h2>
-    <p style="text-align:center; max-width:820px; margin:10px auto 30px; opacity:.92;">
-      These are example edits. If you apply, I’ll tailor the style to match your brand & audience.
-    </p>
-
+    <h2>MY  WORK</h2>
     <div class="videos">
+
+      <!-- Video 1 -->
       <div class="video-card">
-        <video controls poster="20-دقيقة.jpeg">
+        <video controls  poster="20-دقيقة.jpeg">
           <source src="video (1).mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
 
-      <div class="video-card">
-        <video controls poster="خطة-النجاح.jpeg">
+      <!-- Video 2 -->
+             <div class="video-card">
+        <video controls  poster="خطة-النجاح.jpeg">
           <source src="video (3).mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
+      <!-- Video 3 -->
 
-      <div class="video-card">
+      <div class="video-card"  >
         <video controls poster="10-سنن.jpeg">
           <source src="video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
+
     </div>
   </section>
-
 
   <!-- TESTIMONIALS -->
-  <section class="testimonials" id="testimonials">
-    <h2 class="heading">What <span>Clients Say</span></h2>
+<section class="testimonials" id="testimonials">
+  <h2 class="heading">What <span>Clients Say</span></h2>
+  <div class="testimonials-container">
 
-    <p style="text-align:center; max-width:820px; margin:10px auto 30px; opacity:.92;">
-      Feedback focused on results: retention, clarity, and stronger performance.
+    <!-- CARD 1 -->
+    <div class="testimonial-box">
+      <div class="testimonial-content">
+        <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+        </div>
+        <p>
+          Mahmoud did an incredible job editing my video.  
+          The transitions and effects were top-notch — exactly what I wanted!
+        </p>
+        <h4>- Ahmed Mohamed</h4>
+      </div>
+      <div class="testimonial-avatar">
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png" alt="client">
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="testimonial-box">
+      <div class="testimonial-content">
+        <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bx-star'></i>
+          <i class='bx bx-star'></i>
+        </div>
+        <p>
+          Good communication and fast delivery.  
+          Definitely coming back for more projects!
+        </p>
+        <h4>- Sara Jones</h4>
+      </div>
+      <div class="testimonial-avatar">
+        <img src="https://cdn-icons-png.freepik.com/512/18149/18149539.png?ga=GA1.1.1680974828.1751630411" alt="client">
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="testimonial-box">
+      <div class="testimonial-content">
+        <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bx-star'></i>
+        </div>
+        <p>
+          Great attention to detail and perfect timing with the music.  
+          Highly recommended for social media content.
+        </p>
+        <h4>- omar Ahmed</h4>
+      </div>
+      <div class="testimonial-avatar">
+        <img src="https://cdn-icons-png.freepik.com/512/18149/18149547.png" alt="client">
+      </div>
+    </div>
+
+ <!-- EDIT 1 -->
+<div class="testimonial-box">
+  <div class="testimonial-content">
+    <div class="stars">
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+    </div>
+    <p>
+      Mahmoud's attention to detail is outstanding. He matched the music perfectly, tightened the pacing and the final cut improved our video's watch time and engagement significantly. Highly recommended.
     </p>
+    <h4>- Mark Davis</h4>
+  </div>
+  <div class="testimonial-avatar">
+        <img src="https://cdn-icons-png.freepik.com/512/146/146037.png?ga=GA1.1.1680974828.1751630411" alt="client">
+  </div>
+</div>
 
-    <div class="testimonials-container">
-
-      <div class="testimonial-box">
-        <div class="testimonial-content">
-          <div class="stars">
-            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-          </div>
-          <p>
-            The pacing and captions were perfect for our offer. We saw stronger retention and better engagement after the edits.
-          </p>
-          <h4>- Ahmed Mohamed</h4>
-        </div>
-        <div class="testimonial-avatar">
-          <img src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png" alt="client">
-        </div>
-      </div>
-
-      <div class="testimonial-box">
-        <div class="testimonial-content">
-          <div class="stars">
-            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i>
-          </div>
-          <p>
-            Fast delivery and clean work. Communication was smooth and the edits matched our brand style.
-          </p>
-          <h4>- Sara Jones</h4>
-        </div>
-        <div class="testimonial-avatar">
-          <img src="https://cdn-icons-png.freepik.com/512/18149/18149539.png?ga=GA1.1.1680974828.1751630411" alt="client">
-        </div>
-      </div>
-
-      <div class="testimonial-box">
-        <div class="testimonial-content">
-          <div class="stars">
-            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i>
-          </div>
-          <p>
-            Great timing with music and sharp cuts. The final output performed better on social platforms.
-          </p>
-          <h4>- Omar Ahmed</h4>
-        </div>
-        <div class="testimonial-avatar">
-          <img src="https://cdn-icons-png.freepik.com/512/18149/18149547.png" alt="client">
-        </div>
-      </div>
-
-      <div class="testimonial-box">
-        <div class="testimonial-content">
-          <div class="stars">
-            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-          </div>
-          <p>
-            Strong improvement in pacing and clarity. The edit made the message easier to understand and more persuasive.
-          </p>
-          <h4>- Mark Davis</h4>
-        </div>
-        <div class="testimonial-avatar">
-          <img src="https://cdn-icons-png.freepik.com/512/146/146037.png" alt="Mark Davis">
-        </div>
-      </div>
-
-      <div class="testimonial-box">
-        <div class="testimonial-content">
-          <div class="stars">
-            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i>
-          </div>
-          <p>
-            Captions and hooks were on point. We noticed better retention on the first upload after his edit.
-          </p>
-          <h4>- Maya El-Sayed</h4>
-        </div>
-        <div class="testimonial-avatar">
-          <img src="https://cdn-icons-png.freepik.com/512/4179/4179639.png" alt="Maya El-Sayed">
-        </div>
-      </div>
-
-      <div class="testimonial-box">
-        <div class="testimonial-content">
-          <div class="stars">
-            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-          </div>
-          <p>
-            Consistent brand style and reliable delivery. Great for monthly content and scaling our output.
-          </p>
-          <h4>- Karim Abdelrahman</h4>
-        </div>
-        <div class="testimonial-avatar">
-          <img src="https://cdn-icons-png.freepik.com/512/4333/4333724.png" alt="Karim Abdelrahman">
-        </div>
-      </div>
-
+<!-- EDIT 2 -->
+<div class="testimonial-box">
+  <div class="testimonial-content">
+    <div class="stars">
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bx-star'></i>
     </div>
-  </section>
-
-
-  <!-- APPLY / QUALIFY -->
-  <section class="contact-section" id="apply">
-    <h2 class="contact-title">Apply for a Custom Offer 🎬</h2>
-    <p class="contact-subtitle">
-      Tell me about your business and goals — I’ll reply with a custom plan and quote on WhatsApp.
+    <p>
+      Fast turnaround and professional color grading. Captions and hooks were on point — my first upload after Mahmoud's edit got much better retention. Great value.
     </p>
+    <h4>- Maya El-Sayed</h4>
+  </div>
+  <div class="testimonial-avatar">
+    <img src="https://cdn-icons-png.freepik.com/512/4179/4179639.png?ga=GA1.1.1680974828.1751630411" alt="Maya El-Sayed">
+  </div>
+</div>
 
-    <div class="contact-container">
-
-      <form class="contact-form" onsubmit="sendToWhatsAppQualified(event)">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-
-        <select id="businessType" required>
-          <option value="" disabled selected>Business Type</option>
-          <option value="Coach / Course Creator">Coach / Course Creator</option>
-          <option value="Brand / E-commerce">Brand / E-commerce</option>
-          <option value="Service Business">Service Business</option>
-          <option value="Agency">Agency</option>
-          <option value="Other">Other</option>
-        </select>
-
-        <select id="goal" required>
-          <option value="" disabled selected>Main Goal</option>
-          <option value="More leads / inquiries">More leads / inquiries</option>
-          <option value="More sales">More sales</option>
-          <option value="More retention / watch time">More retention / watch time</option>
-          <option value="Ads creatives / scaling">Ads creatives / scaling</option>
-        </select>
-
-        <select id="package" required>
-          <option value="" disabled selected>Preferred Package</option>
-          <option value="Starter (3 videos)">Starter (3 videos)</option>
-          <option value="Growth (8 videos/month)">Growth (8 videos/month)</option>
-          <option value="Scale (20 videos/month)">Scale (20 videos/month)</option>
-          <option value="Not sure (recommend)">Not sure (recommend)</option>
-        </select>
-
-        <select id="budget" required>
-          <option value="" disabled selected>Monthly Budget Range</option>
-          <option value="Under $200">Under $200</option>
-          <option value="$200 - $500">$200 - $500</option>
-          <option value="$500 - $1000">$500 - $1000</option>
-          <option value="$1000+">$1000+</option>
-        </select>
-
-        <textarea id="message" placeholder="Briefly describe what you sell + your Instagram link (optional)..." required></textarea>
-
-        <button type="submit">Send Application via WhatsApp</button>
-      </form>
-
-      <div class="contact-info">
-        <h3>Direct Contact</h3>
-        <div class="social-links">
-          <a href="https://www.instagram.com/vexo_editor/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
-          <a href="mailto:mahkuyokghhh33@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-          <a href="https://wa.me/201017574173?text=Hi%20Mahmoud!%20I%20want%20a%20custom%20offer%20for%20short-form%20video%20editing." target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-whatsapp"></i> WhatsApp
-          </a>
-        </div>
-
-        <div style="margin-top:18px; border:1px solid rgba(255,255,255,.15); border-radius:12px; padding:14px;">
-          <b>Note:</b>
-          <div style="opacity:.95; margin-top:6px;">
-            This service is optimized for businesses selling an offer. If you’re looking for “cheap edits”, I’m not the right fit.
-          </div>
-        </div>
-      </div>
-
+<!-- EDIT 3 -->
+<div class="testimonial-box">
+  <div class="testimonial-content">
+    <div class="stars">
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
     </div>
-  </section>
+    <p>
+      We went with the premium package and it was worth it — consistent brand style, reliable delivery and unlimited revisions until we were happy. The channel's CTR and watch time went up after the launch.
+    </p>
+    <h4>- Karim Abdelrahman</h4>
+  </div>
+  <div class="testimonial-avatar">
+    <img src="https://cdn-icons-png.freepik.com/512/4333/4333724.png?ga=GA1.1.1680974828.1751630411" alt="Karim Abdelrahman">
+  </div>
+</div>
 
 
-  <footer>
-    <div class="container">
-      <div>
-        <h2>Mahmoud | <span style="color:#bd1313;">Vexo Editor</span></h2>
-        <p>Short-form video editing built for conversion: hooks, pacing, captions, and CTAs that drive action.</p>
-      </div>
+  </div>
+</section>
 
-      <div>
-        <h2>Quick Links</h2>
-        <ul>
-          <li><a href="#fit">Fit</a></li>
-          <li><a href="#how">How It Works</a></li>
-          <li><a href="#plans">Plans</a></li>
-          <li><a href="#projects">Work</a></li>
-          <li><a href="#apply">Apply</a></li>
-        </ul>
-      </div>
 
-      <div>
-        <h2>Follow Me</h2>
-        <div class="socials">
-          <a href="https://www.instagram.com/vexo_editor" class="instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/201017574173?text=Hi%20Mahmoud!%20I%20want%20a%20custom%20offer%20for%20short-form%20video%20editing." class="whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.youtube.com/@vexo_editor" class="youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="mailto:mahkuyokghhh33@gmail.com" class="email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-        </div>
+
+<section class="contact-section" id="contact">
+  <h2 class="contact-title">Let's Work Together 🎬</h2>
+  <p class="contact-subtitle">Have a project in mind or need an editor for your next video? Let's make it amazing.</p>
+
+  <div class="contact-container">
+    <form class="contact-form" onsubmit="sendToWhatsApp(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Write your message..." required></textarea>
+      <button type="submit">Send via WhatsApp</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Or Contact Me Directly</h3>
+      <div class="social-links">
+        <a href="https://www.instagram.com/vexo_editor/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="mailto:mahkuyokghhh33@gmail.com"><i class="fas fa-envelope"></i> Email</a>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="bottom-line">
-      © 2025 Mahmoud | Vexo Editor — Built for businesses & coaches
+<footer>
+  <div class="container">
+    <div>
+      <h2>Mahmoud | <span style="color:#bd1313;">Video Editor</span></h2>
+      <p>Turning ideas into cinematic stories. I craft videos that connect emotionally and visually.</p>
     </div>
-  </footer>
+
+    <div>
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Follow Me</h2>
+      <div class="socials">
+        <a href="https://www.instagram.com/vexo_editor" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/201017574173?text=Hi%20Mahmoud!%20I'm%20interested%20in%20purchasing%20your%20video%20editing%20service.%20Can%20you%20please%20share%20the%20details%20and%20pricing%3F" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@vexo_editor" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="mailto:mahkuyokghhh33@gmail.com" class="email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-line">
+    © 2025 Mahmoud | Designed with ❤️ by Mahmoud the Video Editor
+  </div>
+</footer>
 
 
-  <script>
-    // QUALIFIED WhatsApp Application
-    function sendToWhatsAppQualified(e) {
-      e.preventDefault();
+<script>
+function sendToWhatsApp(e) {
+  e.preventDefault();
+  
+  // القيم اللي المستخدم كتبها
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
 
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const businessType = document.getElementById("businessType").value;
-      const goal = document.getElementById("goal").value;
-      const pack = document.getElementById("package").value;
-      const budget = document.getElementById("budget").value;
-      const message = document.getElementById("message").value.trim();
+  // نص الرسالة اللي هتوصل على الواتساب
+  const text = `*طلب جديد من الموقع 🎬*\n\n👤 الاسم: ${name}\n📧 البريد: ${email}\n💬 الرسالة:\n${message}`;
 
-      const text =
-`*New Application 🎬 (Vexo Editor)*
+  // رقمك على الواتساب بصيغة دولية
+  const phone = "201017574173";
 
-👤 Name: ${name}
-📧 Email: ${email}
-🏢 Business: ${businessType}
-🎯 Goal: ${goal}
-📦 Package: ${pack}
-💰 Budget: ${budget}
+  // رابط الإرسال
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
 
-📝 Details:
-${message}
+  // فتح واتساب في نافذة جديدة
+  window.open(url, "_blank");
+}
+</script>
 
-✅ Please send me your custom offer & next steps.`;
-
-      const phone = "201017574173";
-      const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
-      window.open(url, "_blank");
+<script>
+function sendMessage(e) {
+  e.preventDefault();
+  alert('Thank you! Your message has been sent successfully.');
+}
+</script>
+<!-- Auto Redirect by Language -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const userLang = navigator.language || navigator.userLanguage;
+  if (userLang && userLang.startsWith("ar")) {
+    // لو اللغة عربية والنسخة الحالية مش عربية
+    if (!window.location.href.includes("/ar/")) {
+      window.location.href = "https://vexo-editor.github.io/Mahmoud-ahmed/ar";
     }
-  </script>
+  }
+});
+</script>
 
-  <!-- Auto Redirect by Language -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const userLang = navigator.language || navigator.userLanguage;
-      if (userLang && userLang.startsWith("ar")) {
-        if (!window.location.href.includes("/ar/")) {
-          window.location.href = "https://vexo-editor.github.io/Mahmoud-ahmed/ar";
-        }
-      }
-    });
-  </script>
-
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
+
+
