@@ -2,12 +2,19 @@
 <html lang="en">
 
 <head>
+  <!-- Add for better mobile experience -->
+<meta name="theme-color" content="#080808">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- Preload critical resources -->
+<link rel="preload" href="style.css" as="style">
+<link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Basic Meta -->
   <meta charset="UTF-8" />
-    <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vexo Editor | Mahmoud Ahmed - Video Editor</title>
   <meta name="description" content="Vexo Editor – موقع شخصي لمحمود أحمد، محرر فيديو محترف يقدم خدمات المونتاج للفيديوهات القصيرة والمشاريع الإبداعية بجودة عالية وسرعة تنفيذ." />
@@ -55,379 +62,545 @@
 <link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/ar/" hreflang="ar" />
 <link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/" hreflang="x-default" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
-<body dir="rtl" style="font-family:Zain">
+  </head>
 
-  <!-- الهيدر -->
-  <header class="header">
-    <a href="#home" class="logo">محمـ<span>ود</span></a>
-    <i class="bx bx-menu" id="menu-icon"></i>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">
+            <span class="">Vexo</span>
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
 
-    <nav class="navbar">
-      <a href="#home" class="active">الرئيسية</a>
-      <a href="#about">من أنا</a>
-      <a href="#plans">الباقات</a>
-      <a href="#projects">الأعمال</a>
-      <a href="#contact">تواصل</a>
-    </nav>
-  </header>
+        <nav class="navbar">
+  <a href="#home" class="active">الرئيسية</a>
+  <a href="#about">من أنا</a>
+  <a href="#Work">الأعمال</a>
+  <a href="#results">النتائج</a>
+  <a href="#contact">تواصل</a>
+</nav>
 
-  <!-- الصفحة الرئيسية -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <h1>أنا <span>محمود أحمد</span></h1>
-      <h3 class="text-animation"> <span></span></h3>
+    </header>
 
-      <p>
-        أقدّم خدمات مونتاج احترافية تحوّل أفكارك إلى فيديوهات تجذب الانتباه منذ اللحظة الأولى.
-        سواء كان إعلانًا، محتوى سوشيال ميديا، أو مشروعًا شخصيًا —
-        أضمن لك جودة عالية ولمسة إبداعية تعكس هويتك وتجذب جمهورك.
-      </p>
 
-      <div class="social-icons">
-        <a href="https://t.me/Vexo_editor_1"><i class="bx bxl-telegram"></i></a>
-        <a href="https://www.tiktok.com/@vexo_editor"><i class='bx bxl-tiktok'></i></a>
-        <a href="https://www.instagram.com/vexo_editor/"><i class='bx bxl-instagram'></i></a>
-        <a href="https://www.youtube.com/@vexo_editor"><i class='bx bxl-youtube'></i></a>
+ <section class="home hero" id="home">
+  <div class="hero-wrap">
+
+    <!-- العنوان الكبير زي الريفرنس -->
+    <div class="hero-head">
+<h1 class="hero-title">مرحبًا، أنا <span>Vexo</span></h1>
+<p class="hero-sub">
+أساعد العلامات التجارية وصنّاع المحتوى على التميز من خلال مونتاج فيديوهات قصيرة وطويلة
+تجذب الانتباه وتحقق نتائج حقيقية. من الفكرة حتى التسليم النهائي.
+</p>
+
+    </div>
+
+    <!-- كارت الصوت (بديل الفيديو) -->
+    <div class="audio-card" aria-label="Vexo voice message">
+      <div class="audio-top">
+<div class="audio-badge">🎙️ رسالة صوتية من <b>Vexo</b></div>
+        <div class="audio-meta">اسمع 25 ثانية</div>
       </div>
 
-      <div class="btn-groub">
-        <a href="#contact" class="btn">احجز الآن</a>
-        <a href="https://wa.me/201017574173?text=مرحبًا%20محمود!%20أرغب%20في%20التعرف%20على%20خدمات%20المونتاج%20الخاصة%20بك." class="btn">تواصل معي</a>
+      <div class="audio-body">
+        <button class="audio-play" type="button" aria-label="Play/Pause">
+          <i class="bx bx-play"></i>
+        </button>
+
+        <div class="audio-ui">
+<canvas class="audio-visual" height="56" aria-hidden="true"></canvas>
+          <div class="audio-controls">
+            <input class="audio-range" type="range" min="0" max="100" value="0" aria-label="Seek" />
+            <div class="audio-time">
+              <span class="audio-current">0:00</span>
+              <span class="audio-duration">0:00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- حط ملف الصوت هنا -->
+        <audio class="audio-el" preload="metadata">
+          <source src="vexo-message.mp3" type="audio/mpeg" />
+        </audio>
       </div>
     </div>
 
-    <div class="home-image">
-      <img src="Mahmoud.png" alt="محمود أحمد">
-    </div>
-  </section>
+    <!-- الجزء القديم بتاعك (الكلام + السوشيال + الأزرار) -->
+    <div class="hero-grid">
+      <div class="home-content hero-copy">
+        <div class="social-icons">
+          <a href="https://t.me/Vexo_editor_1"><i class="bx bxl-telegram" style="margin-right: 5px;"></i></a>
+          <a href="https://www.tiktok.com/@vexo_editor"><i class='bx bxl-tiktok'></i></a>
+          <a href="https://www.instagram.com/vexo_editor/"><i class='bx bxl-instagram'></i></a>
+          <a href="https://www.youtube.com/@vexo_editor"><i class='bx bxl-youtube'></i></a>
+        </div>
 
-  <!-- من أنا -->
-  <section class="about-section" id="about">
-    <div class="container">
-      <div class="about-left">
-        <h2 class="about-title" id="titlew">من <span>أنا</span></h2>
-        <h3 class="about-subtitle">محرر فيديو وصانع محتوى بصري</h3>
-        <p class="about-text">
-          بشغف كبير في صناعة القصص المرئية والمونتاج الإبداعي،
-          أعمل على تحويل اللقطات الخام إلى محتوى مؤثر يحافظ على انتباه الجمهور.
-          من ضبط الألوان والإيقاع إلى تصميم المؤثرات والانتقالات —
-          كل تفصيلة بتكون مدروسة لتخدم الهدف من الفيديو.
-        </p>
-        <a href="#contact" class="about-btn">تواصل معي</a>
-      </div>
-
-      <div class="about-right">
-        <div class="about-image-wrapper">
-          <img src="f37ec55a8e7df84573423d611796ea91.jpg" alt="محمود أحمد" class="about-image">
+        <div class="btn-groub">
+          <a href="#contact" class="btn">Hire</a>
+          <a href="https://wa.me/201040761248?text=Hi%20Mahmoud!%20I'm%20interested%20in%20purchasing%20your%20video%20editing%20service.%20Can%20you%20please%20share%20the%20details%20and%20pricing%3F"
+             class="btn">Contact</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- الباقات -->
-<section class="plans" id="plans">
-  <h2 class="heading">احجز <span>سعرك</span></h2>
-  <p class="plans-subtitle" style="text-align:center; max-width:700px; margin:10px auto 40px;">
-    الأسعار عندي مرنة وبتتحدد حسب عدد الفيديوهات، طول المحتوى، وطبيعة شغلك. 
-    اختر أسلوب التعاون اللي يناسبك وابعتلي رسالة، وأنا أجهز لك عرض سعر عادل وواضح.
-  </p>
-
-  <div class="plans-container">
-
-    <!-- PLAN 1: Single Video -->
-    <div class="plan-card">
-      <h3 class="plan-name">Single Video Edit</h3>
-      <p class="plan-desc">لو حابب تجرب شغلي على فيديو واحد قبل ما نبدأ تعاون مستمر.</p>
-      <ul class="plan-features">
-        <li>🎬 مونتاج احترافي لفيديو قصير (Reel / TikTok / Short)</li>
-        <li>🎨 تعديل ألوان بسيط + تنسيق للفريم</li>
-        <li>💬 كابشن/Subtitles حسب ستايلك</li>
-        <li>⚡ Hook قوي في أول ثواني</li>
-        <li>♻️ تعديل واحد مجاني</li>
-      </ul>
-      <a href="https://wa.me/201017574173?text=Hi%20Mahmoud!%20I%20want%20a%20custom%20price%20for%20a%20single%20video%20edit." 
-         class="btn-plan">احجز عرض فيديو واحد</a>
     </div>
 
-    <!-- PLAN 2: Content Partner -->
-    <div class="plan-card popular">
-      <div class="tag">Creator Plan</div>
-      <h3 class="plan-name">Content Partner</h3>
-      <p class="plan-desc">لصنّاع المحتوى اللي بينشروا باستمرار وعايزين Editor ثابت.</p>
-      <ul class="plan-features">
-        <li>📅 عدد فيديوهات متفق عليه أسبوعياً / شهرياً</li>
-        <li>🧠 مساعدة في الأفكار والبناء (Hooks – Structure)</li>
-        <li>🎨 هوية بصرية ثابتة لقناتك/براندك</li>
-        <li>⏱️ أولوية في التسليم</li>
-        <li>♻️ تعديلات حسب الاتفاق</li>
-      </ul>
-      <a href="https://wa.me/201017574173?text=Hi%20Mahmoud!%20I%20post%20content%20regularly%20and%20want%20a%20custom%20offer%20for%20multiple%20videos." 
-         class="btn-plan">اطلب عرض شراكة محتوى</a>
+  </div>
+</section>
+<section class="simple-stats">
+  <div class="simple-stats-wrap">
+
+  <div class="stat-box">
+  <h3>55+</h3>
+  <p>مشروع مكتمل</p>
+</div>
+
+<div class="stat-box">
+  <h3>5+</h3>
+  <p>عملاء راضون</p>
+</div>
+
+<div class="stat-box">
+  <h3>سريع</h3>
+  <p>رد خلال 24 ساعة</p>
+</div>
+
+<div class="stat-box">
+  <h3>3+</h3>
+  <p>سنوات خبرة</p>
+</div>
+  </div>
+</section>
+
+
+<section class="vexo-about" id="about">
+  <div class="vexo-container">
+
+    <div class="vexo-about__top">
+   <span class="vexo-pill">من أنا</span>
+<h2 class="vexo-title">أكثر من مجرد مونتير فيديو</h2>
+<p class="vexo-sub">
+أعمل على تحويل الفيديوهات الخام إلى محتوى قوي يجذب المشاهدين
+ويرفع نسبة المشاهدة ويخدم هدفك التسويقي.
+</p>
+
     </div>
 
-    <!-- PLAN 3: Business / Course Package -->
-    <div class="plan-card">
-      <h3 class="plan-name">Business / Course Package</h3>
-      <p class="plan-desc">مثالي لأصحاب البيزنس أو الكورسات اللي محتاجين سلسلة فيديوهات كاملة.</p>
-      <ul class="plan-features">
-        <li>🏢 مونتاج فيديوهات تعليمية / كورسات / براند</li>
-        <li>📚 تقسيم وتنظيم الحلقات أو دروس الكورس</li>
-        <li>🎯 ستايل ثابت متوافق مع الهوية البصرية</li>
-        <li>📊 إمكانية إضافة عناصر تعليمية (نقاط – Titles – Highlights)</li>
-        <li>🤝 خطة عمل وسعر مخصص حسب حجم المشروع</li>
-      </ul>
-      <a href="https://wa.me/201017574173?text=Hi%20Mahmoud!%20I%20have%20a%20business%20or%20course%20and%20need%20a%20custom%20video%20editing%20offer." 
-         class="btn-plan">احجز عرض مخصص لمشروعك</a>
+    <div class="vexo-about__grid">
+      <!-- Left image -->
+      <div class="vexo-about__media">
+        <!-- غيّر src لصورتك -->
+        <img
+          src="Mahmoud.png"
+          alt="Mahmoud Ahmed - Video Editor"
+          loading="lazy"
+        />
+      </div>
+
+      <!-- Right features card -->
+      <div class="vexo-features">
+        <div class="vexo-features__inner">
+
+          <div class="vexo-feature">
+            <div class="vexo-ic">
+              <!-- Play icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l12-7-12-7z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>خبرة بالمنصات</h3>
+<p>فيديوهات مهيأة لـ TikTok، Reels، YouTube والمزيد.</p>
+            </div>
+          </div>
+
+          <div class="vexo-feature">
+            <div class="vexo-ic">
+              <!-- Timeline / story icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 7h10v2H7V7zm0 4h6v2H7v-2zm0 4h10v2H7v-2z"></path>
+                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v12h16V6H4z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>مونتاج قائم على القصة</h3>
+<p>كل لقطة تخدم الرسالة وتحافظ على انتباه المشاهد.</p>
+            </div>
+          </div>
+
+          <div class="vexo-feature">
+            <div class="vexo-ic">
+              <!-- Hook / speed icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                <path d="M12 6a1 1 0 0 0-1 1v5.2l4 2.3a1 1 0 1 0 1-1.7L13 11.2V7a1 1 0 0 0-1-1z"></path>
+              </svg>
+            </div>
+            <div>
+             <h3>الهوك والإيقاع</h3>
+<p>بداية قوية + مونتاج سريع = مشاهدة أطول.</p>
+            </div>
+          </div>
+
+          <div class="vexo-feature">
+            <div class="vexo-ic">
+              <!-- Brand icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2l8 4v6c0 5-3.4 9.4-8 10-4.6-.6-8-5-8-10V6l8-4z"></path>
+                <path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>هوية بصرية متناسقة</h3>
+<p>ستايل ثابت، انتقالات ديناميكية، وSubtitles قوية.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
   </div>
 </section>
 
+<section class="vexo-sfc" id="Work">
+  <div class="vexo-container">
+    <header class="vexo-sfc__head">
+   <h2 class="vexo-sfc__title">الفيديوهات <span>القصيرة</span></h2>
+<p class="vexo-sfc__sub">محتوى قصير جذاب ومُهيأ للمنصات</p>
+    </header>
 
-      <!-- MY BEST EDITS -->
-  <section class="best-edits" id="projects">
-    <h2>MY  WORK</h2>
-    <div class="videos">
+    <div class="vexo-sfc__grid">
 
-      <!-- Video 1 -->
-      <div class="video-card">
-        <video controls  poster="1765719387587.png">
-          <source src="video (1).mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <article class="vexo-card">
+        <button class="vexo-card__media" type="button" aria-label="Play Faceless Motion Graphics"
+          data-video="video1.mp4">
+          <video class="vexo-video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="video1.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+<h3 class="vexo-card__title">مونتاج بدون ظهور<br/>الوجه</h3>
+      </article>
 
-      <!-- Video 2 -->
-             <div class="video-card">
-        <video controls  poster="1765719387587.png">
-          <source src="video (3).mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <!-- Video 3 -->
+      <article class="vexo-card">
+        <button class="vexo-card__media" type="button" aria-label="Play Educational Reel"
+          data-video="video2.mp4">
+          <video class="vexo-video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="video2.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+        <h3 class="vexo-card__title">فيديو تعليمي</h3>
+      </article>
 
-      <div class="video-card"  >
-        <video controls poster="1765719387587.png">
-          <source src="video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <!-- Video 4 -->
-      <div class="video-card">
-        <video controls  poster="1765719387587.png">
-          <source src="اعلان بعد المونتاج.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <article class="vexo-card">
+        <button class="vexo-card__media" type="button" aria-label="Play Informational Reel"
+          data-video="video3.mp4">
+          <video class="vexo-video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="video3.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+<h3 class="vexo-card__title">فيديو معلوماتي</h3>
+      </article>
 
-      <!-- Video 5 -->
-      <div class="video-card">
-        <video controls  poster="1765719387587.png">
-          <source src="قبل و بعد.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <!-- Video 6 -->
+      <article class="vexo-card">
+        <button class="vexo-card__media" type="button" aria-label="Play Vertical Paid Ads for Meta"
+          data-video="video4.mp4">
+          <video class="vexo-video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="video4.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+    <h3 class="vexo-card__title">إعلانات رأسية<br/>للسوشيال</h3>
+      </article>
 
-      <div class="video-card"  >
-        <video controls  poster="1765719387587.png">
-          <source src="0.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <article class="vexo-card">
+        <button class="vexo-card__media" type="button" aria-label="Play Paid Ad Hosted on Meta Ads"
+          data-video="video5.mp4">
+          <video class="vexo-video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="video5.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+        <h3 class="vexo-card__title">إعلانات مدفوعة<br/>على Meta</h3>
+      </article>
 
     </div>
-  </section>
-  <!-- TESTIMONIALS -->
-<section class="testimonials" id="testimonials">
-  <h2 class="heading">What <span>Clients Say</span></h2>
-  <div class="testimonials-container">
 
-    <!-- CARD 1 -->
-    <div class="testimonial-box">
-      <div class="testimonial-content">
-        <div class="stars">
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
+    <div class="vexo-sfc__cta">
+      <a class="vexo-btn" href="#contact">اطلب فيديوهاتك الآن</a>
+    </div>
+  </div>
+
+  <div class="vexo-modal" id="vexoModal" aria-hidden="true">
+    <div class="vexo-modal__backdrop" data-close="1"></div>
+    <div class="vexo-modal__dialog" role="dialog" aria-modal="true" aria-label="Video player">
+      <button class="vexo-modal__close" type="button" data-close="1" aria-label="Close">✕</button>
+      <video id="vexoModalVideo" controls autoplay playsinline></video>
+    </div>
+  </div>
+</section>
+
+<section class="vexo-long" id="long-form">
+  <div class="vexo-container">
+    <header class="vexo-long__head">
+<h2 class="vexo-long__title">الفيديوهات <span>الطويلة</span></h2>
+<p class="vexo-long__sub">
+محتوى طويل مثل فيديوهات يوتيوب، فيديوهات بيعية، وحملات دعائية
+</p>
+
+    </header>
+
+    <div class="vexo-long__grid">
+
+      <!-- 1) Text -->
+      <div class="vexo-long__text">
+        <h3>فيديوهات يوتيوب شخصية</h3>
+<p>فيديوهات لصناع المحتوى والعلامات الشخصية.</p>
+        <div class="vexo-tags">
+          <span class="vexo-tag">YouTube</span>
+          <span class="vexo-tag">Personal Brand</span>
         </div>
-        <p>
-          Mahmoud did an incredible job editing my video.  
-          The transitions and effects were top-notch — exactly what I wanted!
-        </p>
-        <h4>- Ahmed Mohamed</h4>
       </div>
-      <div class="testimonial-avatar">
-        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png" alt="client">
-      </div>
-    </div>
 
-    <!-- CARD 2 -->
-    <div class="testimonial-box">
-      <div class="testimonial-content">
-        <div class="stars">
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bx-star'></i>
-          <i class='bx bx-star'></i>
+      <!-- 2) Video -->
+      <div class="vexo-long__media">
+        <button class="vexo-long__videoBtn" type="button" aria-label="Play Personal YouTube Videos"
+          data-video="long1.mp4">
+          <video class="vexo-long__video" muted playsinline preload="metadata" poster="me.jpg">
+            <source src="long1.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- 3) Video -->
+      <div class="vexo-long__media">
+        <button class="vexo-long__videoBtn" type="button" aria-label="Play Paid Advertisements for Companies"
+          data-video="long2.mp4">
+          <video class="vexo-long__video" muted playsinline preload="metadata" poster="v3.jpg">
+            <source src="long2.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- 4) Text -->
+      <div class="vexo-long__text">
+      <h3>إعلانات مدفوعة للشركات</h3>
+<p>إعلانات تستهدف عملاء جدد وتحسن التحويل.</p>
+        <div class="vexo-tags">
+          <span class="vexo-tag">Meta Ads</span>
+          <span class="vexo-tag">Instagram Ads</span>
         </div>
-        <p>
-          Good communication and fast delivery.  
-          Definitely coming back for more projects!
-        </p>
-        <h4>- Sara Jones</h4>
       </div>
-      <div class="testimonial-avatar">
-        <img src="https://cdn-icons-png.freepik.com/512/18149/18149539.png?ga=GA1.1.1680974828.1751630411" alt="client">
-      </div>
-    </div>
 
-    <!-- CARD 3 -->
-    <div class="testimonial-box">
-      <div class="testimonial-content">
-        <div class="stars">
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bxs-star'></i>
-          <i class='bx bx-star'></i>
+      <!-- 5) Text -->
+      <div class="vexo-long__text">
+    <h3>فيديوهات بيعية (VSL)</h3>
+<p>فيديوهات لزيادة المبيعات وجذب العملاء.</p>
+        <div class="vexo-tags">
+          <span class="vexo-tag">Meta Ads</span>
+          <span class="vexo-tag">Upwork VSL</span>
         </div>
-        <p>
-          Great attention to detail and perfect timing with the music.  
-          Highly recommended for social media content.
-        </p>
-        <h4>- omar Ahmed</h4>
       </div>
-      <div class="testimonial-avatar">
-        <img src="https://cdn-icons-png.freepik.com/512/18149/18149547.png" alt="client">
+
+      <!-- 6) Video -->
+      <div class="vexo-long__media">
+        <button class="vexo-long__videoBtn" type="button" aria-label="Play Video Sales Letter for Ads Agency"
+          data-video="long3.mp4">
+          <video class="vexo-long__video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="long3.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="vexo-modal" id="vexoLongModal" aria-hidden="true">
+    <div class="vexo-modal__backdrop" data-close="1"></div>
+    <div class="vexo-modal__dialog" role="dialog" aria-modal="true" aria-label="Long form video player">
+      <button class="vexo-modal__close" type="button" data-close="1" aria-label="Close">✕</button>
+      <video id="vexoLongModalVideo" controls autoplay playsinline></video>
+    </div>
+  </div>
+</section>
+
+
+<section class="results" id="results">
+  <div class="results-wrap">
+
+    <div class="results-head">
+ <h2>نتائج <span>حقيقية</span></h2>
+<p>مونتاج فيديو يحقق تأثيرًا ملموسًا بالأرقام.</p>
+    </div>
+
+    <!-- Top stats (hover animation هنا) -->
+    <div class="results-stats">
+      <div class="stat-card">
+        <div class="stat-value">5+</div>
+        <div class="stat-label">عملاء راضون</div>
+<div class="stat-label">متوسط الاحتفاظ بالمشاهدة</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-value">76.3%</div>
+        <div class="stat-label">Average View Retention</div>
+        <div class="stat-note">Higher engagement rates</div>
       </div>
     </div>
 
- <!-- EDIT 1 -->
-<div class="testimonial-box">
-  <div class="testimonial-content">
-    <div class="stars">
-      <i class='bx bxs-star'></i>
-      <i class='bx bxs-star'></i>
-      <i class='bx bxs-star'></i>
-      <i class='bx bxs-star'></i>
-      <i class='bx bxs-star'></i>
-    </div>
-    <p>
-      Mahmoud's attention to detail is outstanding. He matched the music perfectly, tightened the pacing and the final cut improved our video's watch time and engagement significantly. Highly recommended.
-    </p>
-    <h4>- Mark Davis</h4>
-  </div>
-  <div class="testimonial-avatar">
-        <img src="https://cdn-icons-png.freepik.com/512/146/146037.png?ga=GA1.1.1680974828.1751630411" alt="client">
-  </div>
-</div>
+    <!-- Analytics image -->
+    <div class="result-card result-wide">
+      <div class="card-title">
+        <h3>Channel Performance</h3>
+        <p>Real analytics showing consistent growth and engagement.</p>
+      </div>
 
-<!-- EDIT 2 -->
-<div class="testimonial-box">
-  <div class="testimonial-content">
-    <div class="stars">
-      <i class='bx bxs-star'></i>
-      <i class='bx bxs-star'></i>
-      <i class='bx bxs-star'></i>
-      <i class='bx bxs-star'></i>
-      <i class='bx bx-star'></i>
+      <div class="media-frame">
+        <img src="analytics.png" alt="Channel analytics screenshot">
+      </div>
     </div>
-    <p>
-      Fast turnaround and professional color grading. Captions and hooks were on point — my first upload after Mahmoud's edit got much better retention. Great value.
-    </p>
-    <h4>- Maya El-Sayed</h4>
-  </div>
-  <div class="testimonial-avatar">
-    <img src="https://cdn-icons-png.freepik.com/512/4179/4179639.png?ga=GA1.1.1680974828.1751630411" alt="Maya El-Sayed">
-  </div>
-</div>
 
-<!-- EDIT 3 -->
-<div class="testimonial-box">
-  <div class="testimonial-content">
-    <div class="stars">
-      <i class='bx bxs-star'></i>
-      <i class='bx bxs-star'></i>
-      <i class='bx bxs-star'></i>
-      <i class='bx bxs-star'></i>
-      <i class='bx bxs-star'></i>
+    <!-- Bottom two before/after images -->
+    <div class="results-grid-2">
+      <div class="result-card">
+        <div class="card-title">
+          <h3>Short Form Success</h3>
+          <p>Retention improvement snapshot.</p>
+        </div>
+
+        <div class="media-frame">
+          <img src="before-after-1.png" alt="Before and after result 1">
+        </div>
+      </div>
+
+      <div class="result-card">
+        <div class="card-title">
+          <h3>Transformation Results</h3>
+          <p>More views & better conversion.</p>
+        </div>
+
+        <div class="media-frame">
+          <img src="before-after-2.png" alt="Before and after result 2">
+        </div>
+      </div>
     </div>
-    <p>
-      We went with the premium package and it was worth it — consistent brand style, reliable delivery and unlimited revisions until we were happy. The channel's CTR and watch time went up after the launch.
-    </p>
-    <h4>- Karim Abdelrahman</h4>
-  </div>
-  <div class="testimonial-avatar">
-    <img src="https://cdn-icons-png.freepik.com/512/4333/4333724.png?ga=GA1.1.1680974828.1751630411" alt="Karim Abdelrahman">
-  </div>
-</div>
-
 
   </div>
 </section>
-  <!-- التواصل -->
-  <section class="contact-section" id="contact">
-    <h2 class="contact-title">خلينا نشتغل سوا 🎬</h2>
-    <p class="contact-subtitle">عندك فكرة لفيديو أو محتاج محرر محترف؟ خلينا نحولها لشيء مميز.</p>
 
-    <div class="contact-container">
-      <form class="contact-form" onsubmit="sendToWhatsApp(event)">
-        <input type="text" id="name" placeholder="الاسم" required>
-        <input type="email" id="email" placeholder="البريد الإلكتروني" required>
-        <textarea id="message" placeholder="اكتب رسالتك..." required></textarea>
-        <button type="submit">أرسل عبر واتساب</button>
-      </form>
+<section class="faq" id="faq">
+  <div class="faq-wrap">
 
-      <div class="contact-info">
-        <h3>تقدر تتواصل مباشرة</h3>
-        <div class="social-links">
-          <a href="https://www.instagram.com/vexo_editor/" target="_blank"><i class="fab fa-instagram"></i> إنستغرام</a>
-          <a href="mailto:mahkuyokghhh33@gmail.com"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
+    <div class="faq-tag">FAQ</div>
+    <h2 class="faq-title">GET YOUR VIDEO EDITED IN THREE SIMPLE STEPS</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Why choose me?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>Because I deliver creative edits, fast communication, and results that grab attention.</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- الفوتر -->
-  <footer>
-    <div class="container">
-      <div>
-        <h2>محمود | <span style="color:#bd1313;">محرر فيديو</span></h2>
-        <p>أحول الأفكار إلى قصص مرئية مؤثرة ومميزة.</p>
-      </div>
-
-      <div>
-        <h2>روابط سريعة</h2>
-        <ul>
-          <li><a href="#about">من أنا</a></li>
-          <li><a href="#projects">الأعمال</a></li>
-          <li><a href="#plans">الباقات</a></li>
-          <li><a href="#contact">تواصل</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>تابعني</h2>
-        <div class="socials">
-          <a href="https://www.instagram.com/vexo_editor"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/201017574173" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.youtube.com/@vexo_editor"><i class="fa-brands fa-youtube"></i></a>
-          <a href="mailto:mahkuyokghhh33@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>How does it work?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>You send footage → I edit → you review → final delivery. Simple and clear.</p>
         </div>
       </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>What’s the cost?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>Pricing depends on complexity, but I always give clear quotes upfront.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>How fast is delivery?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>Basic edits: 2–3 days. Bigger projects: up to 1 week. Rush options available.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="contact-section" id="contact">
+  <h2 class="contact-title">Let's Work Together 🎬</h2>
+  <p class="contact-subtitle">Have a project in mind or need an editor for your next video? Let's make it amazing.</p>
+
+  <div class="contact-container">
+    <form class="contact-form" onsubmit="sendToWhatsApp(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Write your message..." required></textarea>
+      <button type="submit">Send via WhatsApp</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Or Contact Me Directly</h3>
+      <div class="social-links">
+        <a href="https://www.instagram.com/vexo_editor/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="mailto:mahkuyokghhh33@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>
+      <h2> Vexo | <span style="color:#bd1313;">Video Editor</span></h2>
+      <p>Turning ideas into cinematic stories. I craft videos that connect emotionally and visually.</p>
     </div>
 
-    <div class="bottom-line">
-      © 2025 محمود أحمد | تصميم وتنفيذ بواسطة <span style="color:#bd1313;">Vexo Editor</span>
+    <div>
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#Work">My works</a></li>
+        <li><a href="#results">reaults</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </footer>
+
+    <div>
+      <h2>Follow Me</h2>
+      <div class="socials">
+        <a href="https://www.instagram.com/vexo_editor" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/201040761248?text=Hi%20Mahmoud!%20I'm%20interested%20in%20purchasing%20your%20video%20editing%20service.%20Can%20you%20please%20share%20the%20details%20and%20pricing%3F" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@vexo_editor" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="mailto:mahkuyokghhh33@gmail.com" class="email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-line">
+    © 2025 Mahmoud | Designed with ❤️ by Mahmoud the Video Editor
+  </div>
+</footer>
 
 
 <script>
@@ -443,7 +616,7 @@ function sendToWhatsApp(e) {
   const text = `*طلب جديد من الموقع 🎬*\n\n👤 الاسم: ${name}\n📧 البريد: ${email}\n💬 الرسالة:\n${message}`;
 
   // رقمك على الواتساب بصيغة دولية
-  const phone = "201017574173";
+  const phone = "201040761248";
 
   // رابط الإرسال
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
@@ -459,25 +632,445 @@ function sendMessage(e) {
   alert('Thank you! Your message has been sent successfully.');
 }
 </script>
+<!-- Auto Redirect by Language -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const userLang = navigator.language || navigator.userLanguage;
+  if (userLang && userLang.startsWith("ar")) {
+    // لو اللغة عربية والنسخة الحالية مش عربية
+    if (!window.location.href.includes("/ar/")) {
+      window.location.href = "https://vexo-editor.github.io/Mahmoud-ahmed/ar/";
+    }
+  }
+});
+</script>
+<script>
+(function () {
+  const card = document.querySelector(".audio-card");
+  if (!card) return;
+
+  const audio  = card.querySelector(".audio-el");
+  const btn    = card.querySelector(".audio-play");
+  const icon   = btn.querySelector("i");
+  const range  = card.querySelector(".audio-range");
+  const cur    = card.querySelector(".audio-current");
+  const dur    = card.querySelector(".audio-duration");
+  const canvas = card.querySelector(".audio-visual");
+  const ctx    = canvas.getContext("2d");
+
+  // ===== Helpers (زي اللي عندك) =====
+  const fmt = (t) => {
+    if (!isFinite(t)) return "0:00";
+    const m = Math.floor(t / 60);
+    const s = Math.floor(t % 60).toString().padStart(2, "0");
+    return `${m}:${s}`;
+  };
+
+  const resizeCanvas = () => {
+    const dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    canvas.width  = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  };
+
+  window.addEventListener("resize", resizeCanvas);
+  resizeCanvas();
+
+  // ===== Audio UI =====
+  audio.addEventListener("loadedmetadata", () => {
+    dur.textContent = fmt(audio.duration);
+  });
+
+  const setPlayingUI = (playing) => {
+    card.classList.toggle("is-playing", playing);
+    icon.className = playing ? "bx bx-pause" : "bx bx-play";
+  };
+
+  btn.addEventListener("click", async () => {
+    if (audio.paused) {
+      try { await audio.play(); setPlayingUI(true); }
+      catch(e){}
+    } else {
+      audio.pause();
+      setPlayingUI(false);
+    }
+  });
+
+  audio.addEventListener("timeupdate", () => {
+    cur.textContent = fmt(audio.currentTime);
+    if (audio.duration) range.value = (audio.currentTime / audio.duration) * 100;
+  });
+
+  audio.addEventListener("ended", () => setPlayingUI(false));
+
+  range.addEventListener("input", () => {
+    if (!audio.duration) return;
+    audio.currentTime = (range.value / 100) * audio.duration;
+  });
+
+  /* ================== LINE VISUALIZER (Pro) ================== */
+  let audioCtx, analyser, source, data;
+  let raf = null;
+
+  const initVisualizer = async () => {
+    if (audioCtx) return;
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+    analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 2048;               // دقة أعلى للـ line
+    analyser.smoothingTimeConstant = 0.85;
+
+    source = audioCtx.createMediaElementSource(audio);
+    source.connect(analyser);
+    analyser.connect(audioCtx.destination);
+
+    data = new Uint8Array(analyser.fftSize);
+  };
+
+  const draw = () => {
+    raf = requestAnimationFrame(draw);
+
+    const w = canvas.clientWidth;
+    const h = canvas.clientHeight;
+
+    ctx.clearRect(0, 0, w, h);
+
+    // خلفية بسيطة (اختياري)
+    ctx.fillStyle = "rgba(255,255,255,0.02)";
+    roundRect(ctx, 0, 0, w, h, 14);
+    ctx.fill();
+
+    // wave data
+    analyser.getByteTimeDomainData(data);
+
+    const mid = h / 2;
+    const amp = h * 0.32; // قوة الموجة (زوّد/قلّل براحتك)
+
+    // gradient للخط
+    const grad = ctx.createLinearGradient(0, 0, w, 0);
+    grad.addColorStop(0, "rgba(246,11,11,0.35)");
+    grad.addColorStop(0.5, "rgba(246,11,11,0.95)");
+    grad.addColorStop(1, "rgba(246,11,11,0.35)");
+
+    // خط glow تحت
+    ctx.save();
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = "rgba(246,11,11,0.18)";
+    ctx.shadowColor = "rgba(246,11,11,0.55)";
+    ctx.shadowBlur = 18;
+    ctx.beginPath();
+
+    const slice = data.length / w; // يرسم نقطة لكل px تقريبًا
+
+    for (let x = 0; x < w; x++) {
+      const i = Math.floor(x * slice);
+      const v = (data[i] - 128) / 128;     // -1..1
+      const y = mid + v * amp;
+
+      if (x === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.restore();
+
+    // خط رئيسي sharp فوق
+    ctx.save();
+    ctx.lineWidth = 2.5;
+    ctx.strokeStyle = grad;
+    ctx.beginPath();
+
+    for (let x = 0; x < w; x++) {
+      const i = Math.floor(x * slice);
+      const v = (data[i] - 128) / 128;
+      const y = mid + v * amp;
+
+      if (x === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.restore();
+
+    // خط center subtle
+    ctx.save();
+    ctx.strokeStyle = "rgba(255,255,255,0.06)";
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(0, mid);
+    ctx.lineTo(w, mid);
+    ctx.stroke();
+    ctx.restore();
+  };
+
+  function roundRect(ctx, x, y, w, h, r) {
+    r = Math.min(r, w / 2, h / 2);
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
+
+  // مهم: يبدأ بعد click (سياسات المتصفح)
+  btn.addEventListener("click", async () => {
+    await initVisualizer();
+    if (audioCtx.state === "suspended") await audioCtx.resume();
+    if (!raf) draw();
+  });
+
+})();
+</script>
+<script>
+  const modal = document.getElementById("vexoModal");
+  const modalVideo = document.getElementById("vexoModalVideo");
+
+  function openModal(src){
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    modalVideo.src = src;
+    modalVideo.play().catch(()=>{});
+  }
+
+  function closeModal(){
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    modalVideo.pause();
+    modalVideo.removeAttribute("src");
+    modalVideo.load();
+  }
+
+  document.querySelectorAll(".vexo-card__media").forEach(btn=>{
+    btn.addEventListener("click", () => openModal(btn.dataset.video));
+  });
+
+  modal.addEventListener("click", (e)=>{
+    if(e.target.dataset.close) closeModal();
+  });
+
+  document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
+  });
+</script>
+<script>
+  const longModal = document.getElementById("vexoLongModal");
+  const longModalVideo = document.getElementById("vexoLongModalVideo");
+
+  function openLong(src){
+    longModal.classList.add("is-open");
+    longModal.setAttribute("aria-hidden","false");
+    longModalVideo.src = src;
+    longModalVideo.play().catch(()=>{});
+  }
+
+  function closeLong(){
+    longModal.classList.remove("is-open");
+    longModal.setAttribute("aria-hidden","true");
+    longModalVideo.pause();
+    longModalVideo.removeAttribute("src");
+    longModalVideo.load();
+  }
+
+  document.querySelectorAll(".vexo-long__videoBtn").forEach(btn=>{
+    btn.addEventListener("click", ()=> openLong(btn.dataset.video));
+  });
+
+  longModal.addEventListener("click", (e)=>{
+    if(e.target.dataset.close) closeLong();
+  });
+
+  document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape" && longModal.classList.contains("is-open")) closeLong();
+  });
+
+  // Mobile Menu Toggle
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
+
+if (menuIcon && navbar) {
+    menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+        menuIcon.classList.toggle('bx-x');
+    });
+    
+    // Close menu when clicking on a link
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('active');
+            menuIcon.classList.remove('bx-x');
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navbar.contains(e.target) && !menuIcon.contains(e.target)) {
+            navbar.classList.remove('active');
+            menuIcon.classList.remove('bx-x');
+        }
+    });
+}
+
+// Handle responsive video modal sizes
+function adjustModalSize() {
+    const shortModal = document.querySelector('#vexoModal .vexo-modal__dialog');
+    const longModal = document.querySelector('#vexoLongModal .vexo-modal__dialog');
+    
+    if (window.innerWidth <= 768) {
+        // Mobile: Use full width for modals
+        if (shortModal) shortModal.style.width = '95vw';
+        if (longModal) longModal.style.width = '95vw';
+    } else {
+        // Desktop: Reset to original sizes
+        if (shortModal) shortModal.style.width = 'min(420px, 92vw)';
+        if (longModal) longModal.style.width = 'min(960px, 92vw)';
+    }
+}
+
+// Initialize modal sizes
+window.addEventListener('load', adjustModalSize);
+window.addEventListener('resize', adjustModalSize);
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            const targetPosition = targetElement.offsetTop - headerHeight;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Lazy loading for images
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+    
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src || img.src;
+                img.classList.add('loaded');
+                observer.unobserve(img);
+            }
+        });
+    });
+    
+    images.forEach(img => {
+        if (!img.classList.contains('no-lazy')) {
+            imageObserver.observe(img);
+        }
+    });
+});
+
+// Optimize for touch devices
+function optimizeForTouch() {
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    
+    if (isTouchDevice) {
+        // Increase tap targets
+        document.querySelectorAll('.btn, .vexo-btn, .audio-play').forEach(btn => {
+            btn.style.minHeight = '44px';
+            btn.style.minWidth = '44px';
+        });
+        
+        // Add touch feedback
+        document.querySelectorAll('.vexo-card__media, .vexo-long__videoBtn').forEach(btn => {
+            btn.addEventListener('touchstart', function() {
+                this.style.opacity = '0.8';
+            });
+            
+            btn.addEventListener('touchend', function() {
+                this.style.opacity = '1';
+            });
+        });
+    }
+}
+
+window.addEventListener('load', optimizeForTouch);
+
+// Performance optimization on mobile
+if ('connection' in navigator) {
+    if (navigator.connection.saveData === true || navigator.connection.effectiveType.includes('2g')) {
+        // Disable autoplay for videos
+        document.querySelectorAll('video').forEach(video => {
+            video.removeAttribute('autoplay');
+            video.setAttribute('preload', 'none');
+        });
+        
+        // Use lower quality images
+        document.querySelectorAll('img[data-low-src]').forEach(img => {
+            img.src = img.dataset.lowSrc;
+        });
+    }
+}
+
+// Handle orientation changes
+let previousOrientation = window.orientation;
+window.addEventListener('orientationchange', function() {
+    if (window.orientation !== previousOrientation) {
+        setTimeout(() => {
+            location.reload();
+        }, 300);
+    }
+    previousOrientation = window.orientation;
+});
+
+// Update menu toggle function
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    menuIcon.classList.toggle('bx-x');
+    document.body.classList.toggle('menu-open');
+    
+    // Change icon
+    if (menuIcon.classList.contains('bx-x')) {
+        menuIcon.classList.remove('bx-menu');
+        menuIcon.classList.add('bx-x');
+    } else {
+        menuIcon.classList.remove('bx-x');
+        menuIcon.classList.add('bx-menu');
+    }
+});
+</script>
+<script>
+  (function(){
+    const items = document.querySelectorAll(".faq-item");
+
+    items.forEach((item) => {
+      const btn = item.querySelector(".faq-q");
+
+      btn.addEventListener("click", () => {
+        const isOpen = item.classList.contains("active");
+
+        // اقفل الكل
+        items.forEach(i => {
+          i.classList.remove("active");
+          i.querySelector(".faq-q").setAttribute("aria-expanded", "false");
+          i.querySelector(".faq-a").setAttribute("aria-hidden", "true");
+        });
+
+        // افتح الحالي لو كان مقفول
+        if (!isOpen) {
+          item.classList.add("active");
+          btn.setAttribute("aria-expanded", "true");
+          item.querySelector(".faq-a").setAttribute("aria-hidden", "false");
+        }
+      });
+    });
+  })();
+</script>
 
     <script src="main.js"></script>
 </body>
 
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
