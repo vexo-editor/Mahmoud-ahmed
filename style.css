@@ -2481,3 +2481,8 @@ body.menu-open {
     margin: 0 auto;
 }
 }
+
+* {
+    scroll-behavior: smooth;
+    font-family: "Almarai", sans-serif;
+}
