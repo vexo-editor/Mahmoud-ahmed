@@ -996,16 +996,6 @@
       }
     }
 
-    let previousOrientation = window.orientation;
-    window.addEventListener('orientationchange', function () {
-      if (window.orientation !== previousOrientation) {
-        setTimeout(() => {
-          location.reload();
-        }, 300);
-      }
-      previousOrientation = window.orientation;
-    });
-
     menuIcon.addEventListener('click', () => {
       navbar.classList.toggle('active');
       menuIcon.classList.toggle('bx-x');
@@ -1052,5 +1042,6 @@
 </body>
 
 </html>
+
 
 
