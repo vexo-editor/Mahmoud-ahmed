@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Add for better mobile experience -->
-  <meta name="theme-color" content="#080808">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#080808">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <!-- Preload critical resources (non-blocking) -->
-  <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="style.css"></noscript>
-
-  <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"></noscript>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Basic Meta -->
+<!-- Preload critical resources -->
+<link rel="preload" href="style.css" as="style">
+<link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Basic Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vexo Editor | Mahmoud Ahmed - Video Editor</title>
-  <meta name="description" content="Vexo Editor – موقع شخصي لمحمود أحمد، مونتير فيديو متخصص في الفيديوهات القصيرة والمشاريع الإبداعية بجودة عالية وسرعة تنفيذ." />
-  <meta name="keywords" content="Vexo Editor, Mahmoud Ahmed, video editor, short form video editor, reels editor, TikTok editor, YouTube shorts editor, مونتير فيديو, short videos, reels, TikTok, YouTube shorts, freelancer" />
+  <meta name="description" content="Vexo Editor – موقع شخصي لمحمود أحمد، محرر فيديو محترف يقدم خدمات المونتاج للفيديوهات القصيرة والمشاريع الإبداعية بجودة عالية وسرعة تنفيذ." />
+  <meta name="keywords" content="Vexo Editor, Mahmoud Ahmed, video editor, مونتاج, محرر فيديو, short videos, reels, TikTok, YouTube shorts, freelancer" />
   <meta name="author" content="Mahmoud Ahmed" />
   <meta name="robots" content="index, follow" />
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://vexo-editor.github.io/Mahmoud-ahmed/" />
 
-  <!-- Open Graph for Facebook/LinkedIn -->
-  <meta property="og:title" content="Vexo Editor | Mahmoud Ahmed - Video Editor" />
-  <meta property="og:description" content="Professional short-form video editing for Reels, TikTok & YouTube Shorts. Helping creators grow pages & sales." />
-  <meta property="og:image" content="https://vexo-editor.github.io/Mahmoud-ahmed/Mahmoud.png" />
-  <meta property="og:url" content="https://vexo-editor.github.io/Mahmoud-ahmed/" />
+  <!-- Open Graph (For Facebook & LinkedIn) -->
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vexo-editor.github.io/Mahmoud-ahmed/" />
+  <meta property="og:title" content="Vexo Editor | Mahmoud Ahmed - Video Editor" />
+  <meta property="og:description" content="موقع شخصي لمحمود أحمد، محرر فيديو محترف بخبرة في المونتاج الإبداعي للفيديوهات القصيرة والمحتوى الرقمي." />
+  <meta property="og:image" content="https://vexo-editor.github.io/Mahmoud-ahmed/Mahmoud.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://vexo-editor.github.io/Mahmoud-ahmed/" />
   <meta name="twitter:title" content="Vexo Editor | Mahmoud Ahmed - Video Editor" />
-  <meta name="twitter:description" content="Short videos that grow pages & sales. Helping creators grow on Instagram & TikTok." />
+  <meta name="twitter:description" content="موقع شخصي لمحمود أحمد، محرر فيديو محترف بخبرة في المونتاج للفيديوهات القصيرة." />
   <meta name="twitter:image" content="https://vexo-editor.github.io/Mahmoud-ahmed/Mahmoud.png" />
 
   <!-- Favicon -->
-  <link rel="icon" href="Mahmoud.png" type="image/png" />
+  <link rel="icon" type="image/png" href="https://vexo-editor.github.io/Mahmoud-ahmed/Mahmoud.png" />
 
-  <!-- JSON-LD structured data -->
+  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -58,236 +57,511 @@
     ]
   }
   </script>
-
   <!-- Language Versions -->
-  <link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/" hreflang="en" />
-  <link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/ar" hreflang="ar" />
-  <link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/" hreflang="x-default" />
+<link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/" hreflang="en" />
+<link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/ar" hreflang="ar" />
+<link rel="alternate" href="https://vexo-editor.github.io/Mahmoud-ahmed/" hreflang="x-default" />
 
-  <style>
-    /* Optional smooth placeholder effect */
-    img.lazy-img { filter: blur(8px); transition: .25s; }
-    img.lazy-img.loaded { filter: blur(0); }
-  </style>
-</head>
+  </head>
 
 <body>
+    <header class="header">
+        <a href="#home" class="logo">
+            <span class="">Vexo</span>
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
 
-<header class="header">
-  <a href="#home" class="logo"><span class="">Vexo</span></a>
-  <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#Work">Work</a>
+            <a href="#results">Results</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <nav class="navbar">
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#Work">Work</a>
-    <a href="#results">Results</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
 
-<section class="home hero" id="home">
+ <section class="home hero" id="home">
   <div class="hero-wrap">
-    <div class="hero-left">
-      <h1>Short videos that grow pages & sales</h1>
-      <p>Helping creators grow on Instagram & TikTok</p>
 
-      <div class="hero-cta">
-        <a class="btn" href="#contact">Let’s Work Together 🎬</a>
-        <button class="btn btn-outline" id="heroPlayBtn" type="button">
-          <i class='bx bx-play'></i> Watch
-        </button>
+    <!-- العنوان الكبير زي الريفرنس -->
+    <div class="hero-head">
+      <h1 class="hero-title">Hello, I'm<span> vexo</span> </h1>
+      <p class="hero-sub">
+       I help brands and creators stand out with impactful short and long-form edits. From concept to final cut, I turn raw footage into scroll-stopping content that performs.
+      </p>
+    </div>
+
+    <!-- كارت الصوت (بديل الفيديو) -->
+    <div class="audio-card" aria-label="Vexo voice message">
+      <div class="audio-top">
+        <div class="audio-badge">🎙️ massage from <b>Vexo</b></div>
+        <div class="audio-meta">45s</div>
       </div>
 
-      <div class="audio-ui">
-        <canvas class="audio-visual" aria-hidden="true" height="56"></canvas>
-        <div class="audio-controls">
-          <input class="audio-range" type="range" min="0" max="100" value="0" aria-label="Seek" />
-          <div class="audio-time">
-            <span class="audio-current">0:00</span>
-            <span class="audio-duration">0:00</span>
+      <div class="audio-body">
+        <button class="audio-play" type="button" aria-label="Play/Pause">
+          <i class="bx bx-play"></i>
+        </button>
+
+        <div class="audio-ui">
+<canvas class="audio-visual" height="56" aria-hidden="true"></canvas>
+          <div class="audio-controls">
+            <input class="audio-range" type="range" min="0" max="100" value="0" aria-label="Seek" />
+            <div class="audio-time">
+              <span class="audio-current">0:00</span>
+              <span class="audio-duration">0:00</span>
+            </div>
           </div>
+        </div>
+
+        <!-- حط ملف الصوت هنا -->
+        <audio class="audio-el" preload="metadata">
+          <source src="vexo-message.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+    </div>
+
+    <!-- الجزء القديم بتاعك (الكلام + السوشيال + الأزرار) -->
+    <div class="hero-grid">
+      <div class="home-content hero-copy">
+        <div class="social-icons">
+          <a href="https://t.me/Vexo_editor_1"><i class="bx bxl-telegram" style="margin-right: 5px;"></i></a>
+          <a href="https://www.tiktok.com/@vexo_editor"><i class='bx bxl-tiktok'></i></a>
+          <a href="https://www.instagram.com/vexo_editor/"><i class='bx bxl-instagram'></i></a>
+          <a href="https://www.youtube.com/@vexo_editor"><i class='bx bxl-youtube'></i></a>
+        </div>
+
+        <div class="btn-groub">
+          <a href="#contact" class="btn">Hire</a>
+          <a href="https://wa.me/201040761248?text=Hi%20Mahmoud!%20I'm%20interested%20in%20purchasing%20your%20video%20editing%20service.%20Can%20you%20please%20share%20the%20details%20and%20pricing%3F"
+             class="btn">Contact</a>
         </div>
       </div>
 
-      <!-- حط ملف الصوت هنا -->
-      <audio class="audio-el" preload="metadata">
-        <source src="vexo.mp3" type="audio/mpeg">
-      </audio>
     </div>
 
-    <div class="hero-right">
-      <!-- (لو عندك عناصر هنا سيبها زي ما هي) -->
+  </div>
+</section>
+<section class="simple-stats">
+  <div class="simple-stats-wrap">
+
+    <div class="stat-box">
+      <h3>55+</h3>
+      <p>Projects Completed</p>
     </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-box">
+      <h3>5+</h3>
+      <p>Satisfied Clients</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-box">
+      <h3>Fast</h3>
+      <p>24h Replies</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-box">
+      <h3>3+</h3>
+      <p>Years of Experience</p>
+    </div>
+
   </div>
 </section>
 
-<section class="about" id="about">
-  <div class="about-container">
-    <div class="about-img">
-      <img
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-        data-src="Mahmoud.png"
-        class="lazy-img"
-        loading="lazy"
-        decoding="async"
-        alt="Mahmoud Ahmed"
-        width="520"
-        height="520"
-      />
+
+<section class="vexo-about" id="about">
+  <div class="vexo-container">
+
+    <div class="vexo-about__top">
+      <span class="vexo-pill">Who I Am</span>
+
+      <h2 class="vexo-title">More Than Just a Video Editor</h2>
+
+      <p class="vexo-sub">
+        I help brands and creators stand out with impactful short and long-form edits.
+        From concept to final cut, I turn raw footage into scroll-stopping content that performs.
+      </p>
     </div>
 
-    <div class="about-content">
-      <h2>About Me</h2>
-      <p>I’m Mahmoud Ahmed — a short-form conversion video editor. I focus on retention and turning views into sales.</p>
-      <div class="about-stats">
-        <div class="stat"><h3>15+</h3><p>Clients</p></div>
-        <div class="stat"><h3>50+</h3><p>Videos</p></div>
+    <div class="vexo-about__grid">
+      <!-- Left image -->
+      <div class="vexo-about__media">
+        <!-- غيّر src لصورتك -->
+        <img
+          src="Mahmoud.png"
+          alt="Mahmoud Ahmed - Video Editor"
+          loading="lazy"
+        />
+      </div>
+
+      <!-- Right features card -->
+      <div class="vexo-features">
+        <div class="vexo-features__inner">
+
+          <div class="vexo-feature">
+            <div class="vexo-ic">
+              <!-- Play icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l12-7-12-7z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Platform Expertise</h3>
+              <p>Videos optimized for TikTok, Reels, YouTube & more.</p>
+            </div>
+          </div>
+
+          <div class="vexo-feature">
+            <div class="vexo-ic">
+              <!-- Timeline / story icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 7h10v2H7V7zm0 4h6v2H7v-2zm0 4h10v2H7v-2z"></path>
+                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v12h16V6H4z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Story-Driven Editing</h3>
+              <p>Every cut serves the message and keeps viewers hooked.</p>
+            </div>
+          </div>
+
+          <div class="vexo-feature">
+            <div class="vexo-ic">
+              <!-- Hook / speed icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                <path d="M12 6a1 1 0 0 0-1 1v5.2l4 2.3a1 1 0 1 0 1-1.7L13 11.2V7a1 1 0 0 0-1-1z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Pacing & Hook Mastery</h3>
+              <p>Open strong, flow fast, maximize watch time.</p>
+            </div>
+          </div>
+
+          <div class="vexo-feature">
+            <div class="vexo-ic">
+              <!-- Brand icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2l8 4v6c0 5-3.4 9.4-8 10-4.6-.6-8-5-8-10V6l8-4z"></path>
+                <path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Brand-Aligned Visuals</h3>
+              <p>Consistent style, dynamic transitions, and punchy subtitles.</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
+
   </div>
 </section>
 
-<section class="Work" id="Work">
-  <h2 class="heading">My <span>Work</span></h2>
+<section class="vexo-sfc" id="Work">
+  <div class="vexo-container">
+    <header class="vexo-sfc__head">
+      <h2 class="vexo-sfc__title">Short Form <span>Content</span></h2>
+      <p class="vexo-sfc__sub">Optimized and engaging short form videos</p>
+    </header>
 
-  <div class="work-container">
+    <div class="vexo-sfc__grid">
 
-    <div class="work-box">
-      <video class="vexo-video lazy-video" muted playsinline preload="none" poster="poster1.png" data-src="video1.mp4"></video>
-      <div class="work-layer">
-        <h4>Project 1</h4>
-        <button class="btn vexo-open-modal" data-video="video1.mp4">Watch</button>
-      </div>
+      <article class="vexo-card">
+        <button class="vexo-card__media" type="button" aria-label="Play Faceless Motion Graphics"
+          data-video="video1.mp4">
+          <video class="vexo-video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="video1.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+        <h3 class="vexo-card__title">Faceless Motion<br/>Graphics</h3>
+      </article>
+
+      <article class="vexo-card">
+        <button class="vexo-card__media" type="button" aria-label="Play Educational Reel"
+          data-video="video2.mp4">
+          <video class="vexo-video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="video2.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+        <h3 class="vexo-card__title">Educational Reel</h3>
+      </article>
+
+      <article class="vexo-card">
+        <button class="vexo-card__media" type="button" aria-label="Play Informational Reel"
+          data-video="video3.mp4">
+          <video class="vexo-video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="video3.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+        <h3 class="vexo-card__title">Informational Reel</h3>
+      </article>
+
+      <article class="vexo-card">
+        <button class="vexo-card__media" type="button" aria-label="Play Vertical Paid Ads for Meta"
+          data-video="video4.mp4">
+          <video class="vexo-video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="video4.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+        <h3 class="vexo-card__title">Vertical Paid Ads for<br/>Meta</h3>
+      </article>
+
+      <article class="vexo-card">
+        <button class="vexo-card__media" type="button" aria-label="Play Paid Ad Hosted on Meta Ads"
+          data-video="video5.mp4">
+          <video class="vexo-video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="video5.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+        <h3 class="vexo-card__title">Paid Ad Hosted on<br/>Meta Ads</h3>
+      </article>
+
     </div>
 
-    <div class="work-box">
-      <video class="vexo-video lazy-video" muted playsinline preload="none" poster="poster2.png" data-src="video2.mp4"></video>
-      <div class="work-layer">
-        <h4>Project 2</h4>
-        <button class="btn vexo-open-modal" data-video="video2.mp4">Watch</button>
-      </div>
+    <div class="vexo-sfc__cta">
+      <a class="vexo-btn" href="#contact">Get Your Short Form Content</a>
     </div>
-
-    <div class="work-box">
-      <video class="vexo-video lazy-video" muted playsinline preload="none" poster="poster3.png" data-src="video3.mp4"></video>
-      <div class="work-layer">
-        <h4>Project 3</h4>
-        <button class="btn vexo-open-modal" data-video="video3.mp4">Watch</button>
-      </div>
-    </div>
-
-    <div class="work-box">
-      <video class="vexo-video lazy-video" muted playsinline preload="none" poster="poster4.png" data-src="video4.mp4"></video>
-      <div class="work-layer">
-        <h4>Project 4</h4>
-        <button class="btn vexo-open-modal" data-video="video4.mp4">Watch</button>
-      </div>
-    </div>
-
-    <div class="work-box">
-      <video class="vexo-video lazy-video" muted playsinline preload="none" poster="poster5.png" data-src="video5.mp4"></video>
-      <div class="work-layer">
-        <h4>Project 5</h4>
-        <button class="btn vexo-open-modal" data-video="video5.mp4">Watch</button>
-      </div>
-    </div>
-
   </div>
 
-  <!-- Modal -->
-  <div id="vexoModal" class="vexo-modal">
-    <div class="vexo-modal-content">
-      <span class="vexo-close">&times;</span>
+  <div class="vexo-modal" id="vexoModal" aria-hidden="true">
+    <div class="vexo-modal__backdrop" data-close="1"></div>
+    <div class="vexo-modal__dialog" role="dialog" aria-modal="true" aria-label="Video player">
+      <button class="vexo-modal__close" type="button" data-close="1" aria-label="Close">✕</button>
       <video id="vexoModalVideo" controls autoplay playsinline></video>
     </div>
   </div>
 </section>
 
-<section class="results" id="results">
-  <h2 class="heading">My <span>Results</span></h2>
+<section class="vexo-long" id="long-form">
+  <div class="vexo-container">
+    <header class="vexo-long__head">
+      <h2 class="vexo-long__title">Long Form <span>Productions</span></h2>
+      <p class="vexo-long__sub">
+        Long-form video content including YouTube content, video sales letters, and
+        promotional campaigns
+      </p>
+    </header>
 
-  <div class="results-container">
+    <div class="vexo-long__grid">
 
-    <div class="result-box">
-      <img
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-        data-src="analytics.png"
-        class="lazy-img"
-        loading="lazy"
-        decoding="async"
-        alt="Channel analytics screenshot"
-        width="1200"
-        height="700"
-      />
-      <h3>Analytics Growth</h3>
-      <p>Retention-first editing that improves watch time.</p>
+      <!-- 1) Text -->
+      <div class="vexo-long__text">
+        <h3>Personal YouTube Videos</h3>
+        <p>
+          YouTube videos for personal brands, showcasing their skills and talking
+          about topics related to their field of work
+        </p>
+        <div class="vexo-tags">
+          <span class="vexo-tag">YouTube</span>
+          <span class="vexo-tag">Personal Brand</span>
+        </div>
+      </div>
+
+      <!-- 2) Video -->
+      <div class="vexo-long__media">
+        <button class="vexo-long__videoBtn" type="button" aria-label="Play Personal YouTube Videos"
+          data-video="long1.mp4">
+          <video class="vexo-long__video" muted playsinline preload="metadata" poster="me.jpg">
+            <source src="long1.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- 3) Video -->
+      <div class="vexo-long__media">
+        <button class="vexo-long__videoBtn" type="button" aria-label="Play Paid Advertisements for Companies"
+          data-video="long2.mp4">
+          <video class="vexo-long__video" muted playsinline preload="metadata" poster="v3.jpg">
+            <source src="long2.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- 4) Text -->
+      <div class="vexo-long__text">
+        <h3>Paid Advertisements for Companies</h3>
+        <p>
+          Paid advertisements for companies looking to reach new customers/clients
+        </p>
+        <div class="vexo-tags">
+          <span class="vexo-tag">Meta Ads</span>
+          <span class="vexo-tag">Instagram Ads</span>
+        </div>
+      </div>
+
+      <!-- 5) Text -->
+      <div class="vexo-long__text">
+        <h3>Video Sales Letter for Ads Agency</h3>
+        <p>
+          Video Sales Letter (VSL) for companies to help attract new clients
+        </p>
+        <div class="vexo-tags">
+          <span class="vexo-tag">Meta Ads</span>
+          <span class="vexo-tag">Upwork VSL</span>
+        </div>
+      </div>
+
+      <!-- 6) Video -->
+      <div class="vexo-long__media">
+        <button class="vexo-long__videoBtn" type="button" aria-label="Play Video Sales Letter for Ads Agency"
+          data-video="long3.mp4">
+          <video class="vexo-long__video" muted playsinline preload="metadata" poster="posterX.png">
+            <source src="long3.mp4" type="video/mp4" />
+          </video>
+          <span class="vexo-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
     </div>
-
-    <div class="result-box">
-      <img
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-        data-src="before-after-1.png"
-        class="lazy-img"
-        loading="lazy"
-        decoding="async"
-        alt="Before and After result 1"
-        width="1200"
-        height="700"
-      />
-      <h3>Before / After</h3>
-      <p>Cleaner pacing, better hooks, stronger captions.</p>
-    </div>
-
-    <div class="result-box">
-      <img
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-        data-src="before-after-2.png"
-        class="lazy-img"
-        loading="lazy"
-        decoding="async"
-        alt="Before and After result 2"
-        width="1200"
-        height="700"
-      />
-      <h3>Before / After</h3>
-      <p>Higher retention + more conversions.</p>
-    </div>
-
   </div>
-</section>
 
-<section class="vexo-long">
-  <h2 class="heading">Long <span>Videos</span></h2>
-
-  <div class="vexo-long__container">
-    <div class="vexo-long__card">
-      <video class="vexo-long__video lazy-video" muted playsinline preload="none" poster="long-poster1.png" data-src="long1.mp4"></video>
-      <button class="btn vexo-open-long-modal" data-video="long1.mp4">Watch</button>
-    </div>
-
-    <div class="vexo-long__card">
-      <video class="vexo-long__video lazy-video" muted playsinline preload="none" poster="long-poster2.png" data-src="long2.mp4"></video>
-      <button class="btn vexo-open-long-modal" data-video="long2.mp4">Watch</button>
-    </div>
-
-    <div class="vexo-long__card">
-      <video class="vexo-long__video lazy-video" muted playsinline preload="none" poster="long-poster3.png" data-src="long3.mp4"></video>
-      <button class="btn vexo-open-long-modal" data-video="long3.mp4">Watch</button>
-    </div>
-  </div>
-
-  <!-- Long Modal -->
-  <div id="vexoLongModal" class="vexo-modal">
-    <div class="vexo-modal-content">
-      <span class="vexo-long-close">&times;</span>
+  <!-- Modal -->
+  <div class="vexo-modal" id="vexoLongModal" aria-hidden="true">
+    <div class="vexo-modal__backdrop" data-close="1"></div>
+    <div class="vexo-modal__dialog" role="dialog" aria-modal="true" aria-label="Long form video player">
+      <button class="vexo-modal__close" type="button" data-close="1" aria-label="Close">✕</button>
       <video id="vexoLongModalVideo" controls autoplay playsinline></video>
     </div>
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
+
+<section class="results" id="results">
+  <div class="results-wrap">
+
+    <div class="results-head">
+      <h2>Proven <span>Results</span></h2>
+      <p>My video editing delivers measurable impact for creators & businesses.</p>
+    </div>
+
+    <!-- Top stats (hover animation هنا) -->
+    <div class="results-stats">
+      <div class="stat-card">
+        <div class="stat-value">5+</div>
+        <div class="stat-label">Clients satisfied</div>
+        <div class="stat-note">Trusted partnerships</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-value">76.3%</div>
+        <div class="stat-label">Average View Retention</div>
+        <div class="stat-note">Higher engagement rates</div>
+      </div>
+    </div>
+
+    <!-- Analytics image -->
+    <div class="result-card result-wide">
+      <div class="card-title">
+        <h3>Channel Performance</h3>
+        <p>Real analytics showing consistent growth and engagement.</p>
+      </div>
+
+      <div class="media-frame">
+        <img src="analytics.png" alt="Channel analytics screenshot">
+      </div>
+    </div>
+
+    <!-- Bottom two before/after images -->
+    <div class="results-grid-2">
+      <div class="result-card">
+        <div class="card-title">
+          <h3>Short Form Success</h3>
+          <p>Retention improvement snapshot.</p>
+        </div>
+
+        <div class="media-frame">
+          <img src="before-after-1.png" alt="Before and after result 1">
+        </div>
+      </div>
+
+      <div class="result-card">
+        <div class="card-title">
+          <h3>Transformation Results</h3>
+          <p>More views & better conversion.</p>
+        </div>
+
+        <div class="media-frame">
+          <img src="before-after-2.png" alt="Before and after result 2">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="faq-wrap">
+
+    <div class="faq-tag">FAQ</div>
+    <h2 class="faq-title">GET YOUR VIDEO EDITED IN THREE SIMPLE STEPS</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Why choose me?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>Because I deliver creative edits, fast communication, and results that grab attention.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>How does it work?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>You send footage → I edit → you review → final delivery. Simple and clear.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>What’s the cost?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>Pricing depends on complexity, but I always give clear quotes upfront.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>How fast is delivery?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>Basic edits: 2–3 days. Bigger projects: up to 1 week. Rush options available.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="contact-section" id="contact">
+  <h2 class="contact-title">Let's Work Together 🎬</h2>
+  <p class="contact-subtitle">Have a project in mind or need an editor for your next video? Let's make it amazing.</p>
 
   <div class="contact-container">
     <form class="contact-form" onsubmit="sendToWhatsApp(event)">
@@ -307,149 +581,510 @@
   </div>
 </section>
 
-<!-- Scripts -->
+<footer>
+  <div class="container">
+    <div>
+      <h2> Vexo | <span style="color:#bd1313;">Video Editor</span></h2>
+      <p>Turning ideas into cinematic stories. I craft videos that connect emotionally and visually.</p>
+    </div>
+
+    <div>
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#Work">My works</a></li>
+        <li><a href="#results">reaults</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Follow Me</h2>
+      <div class="socials">
+        <a href="https://www.instagram.com/vexo_editor" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/201040761248?text=Hi%20Mahmoud!%20I'm%20interested%20in%20purchasing%20your%20video%20editing%20service.%20Can%20you%20please%20share%20the%20details%20and%20pricing%3F" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@vexo_editor" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="mailto:mahkuyokghhh33@gmail.com" class="email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-line">
+    © 2025 Mahmoud | Designed with ❤️ by Mahmoud the Video Editor
+  </div>
+</footer>
+
+
 <script>
-/* Smooth scroll (لو موجود عندك سيبه زي ما هو) */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const targetId = this.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
-    if (!targetElement) return;
+function sendToWhatsApp(e) {
+  e.preventDefault();
+  
+  // القيم اللي المستخدم كتبها
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
 
-    e.preventDefault();
+  // نص الرسالة اللي هتوصل على الواتساب
+  const text = `*طلب جديد من الموقع 🎬*\n\n👤 الاسم: ${name}\n📧 البريد: ${email}\n💬 الرسالة:\n${message}`;
 
-    const header = document.querySelector('.header');
-    const headerHeight = header ? header.offsetHeight : 0;
+  // رقمك على الواتساب بصيغة دولية
+  const phone = "201040761248";
 
-    const targetPosition = targetElement.offsetTop - headerHeight;
+  // رابط الإرسال
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
 
-    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+  // فتح واتساب في نافذة جديدة
+  window.open(url, "_blank");
+}
+</script>
+
+<script>
+function sendMessage(e) {
+  e.preventDefault();
+  alert('Thank you! Your message has been sent successfully.');
+}
+</script>
+<!-- Auto Redirect by Language -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const userLang = navigator.language || navigator.userLanguage;
+  if (userLang && userLang.startsWith("ar")) {
+    // لو اللغة عربية والنسخة الحالية مش عربية
+    if (!window.location.href.includes("/ar/")) {
+      window.location.href = "https://vexo-editor.github.io/Mahmoud-ahmed/ar";
+    }
+  }
+});
+</script>
+<script>
+(function () {
+  const card = document.querySelector(".audio-card");
+  if (!card) return;
+
+  const audio  = card.querySelector(".audio-el");
+  const btn    = card.querySelector(".audio-play");
+  const icon   = btn.querySelector("i");
+  const range  = card.querySelector(".audio-range");
+  const cur    = card.querySelector(".audio-current");
+  const dur    = card.querySelector(".audio-duration");
+  const canvas = card.querySelector(".audio-visual");
+  const ctx    = canvas.getContext("2d");
+
+  // ===== Helpers (زي اللي عندك) =====
+  const fmt = (t) => {
+    if (!isFinite(t)) return "0:00";
+    const m = Math.floor(t / 60);
+    const s = Math.floor(t % 60).toString().padStart(2, "0");
+    return `${m}:${s}`;
+  };
+
+  const resizeCanvas = () => {
+    const dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    canvas.width  = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  };
+
+  window.addEventListener("resize", resizeCanvas);
+  resizeCanvas();
+
+  // ===== Audio UI =====
+  audio.addEventListener("loadedmetadata", () => {
+    dur.textContent = fmt(audio.duration);
   });
+
+  const setPlayingUI = (playing) => {
+    card.classList.toggle("is-playing", playing);
+    icon.className = playing ? "bx bx-pause" : "bx bx-play";
+  };
+
+  btn.addEventListener("click", async () => {
+    if (audio.paused) {
+      try { await audio.play(); setPlayingUI(true); }
+      catch(e){}
+    } else {
+      audio.pause();
+      setPlayingUI(false);
+    }
+  });
+
+  audio.addEventListener("timeupdate", () => {
+    cur.textContent = fmt(audio.currentTime);
+    if (audio.duration) range.value = (audio.currentTime / audio.duration) * 100;
+  });
+
+  audio.addEventListener("ended", () => setPlayingUI(false));
+
+  range.addEventListener("input", () => {
+    if (!audio.duration) return;
+    audio.currentTime = (range.value / 100) * audio.duration;
+  });
+
+  /* ================== LINE VISUALIZER (Pro) ================== */
+  let audioCtx, analyser, source, data;
+  let raf = null;
+
+  const initVisualizer = async () => {
+    if (audioCtx) return;
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+    analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 2048;               // دقة أعلى للـ line
+    analyser.smoothingTimeConstant = 0.85;
+
+    source = audioCtx.createMediaElementSource(audio);
+    source.connect(analyser);
+    analyser.connect(audioCtx.destination);
+
+    data = new Uint8Array(analyser.fftSize);
+  };
+
+  const draw = () => {
+    raf = requestAnimationFrame(draw);
+
+    const w = canvas.clientWidth;
+    const h = canvas.clientHeight;
+
+    ctx.clearRect(0, 0, w, h);
+
+    // خلفية بسيطة (اختياري)
+    ctx.fillStyle = "rgba(255,255,255,0.02)";
+    roundRect(ctx, 0, 0, w, h, 14);
+    ctx.fill();
+
+    // wave data
+    analyser.getByteTimeDomainData(data);
+
+    const mid = h / 2;
+    const amp = h * 0.32; // قوة الموجة (زوّد/قلّل براحتك)
+
+    // gradient للخط
+    const grad = ctx.createLinearGradient(0, 0, w, 0);
+    grad.addColorStop(0, "rgba(246,11,11,0.35)");
+    grad.addColorStop(0.5, "rgba(246,11,11,0.95)");
+    grad.addColorStop(1, "rgba(246,11,11,0.35)");
+
+    // خط glow تحت
+    ctx.save();
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = "rgba(246,11,11,0.18)";
+    ctx.shadowColor = "rgba(246,11,11,0.55)";
+    ctx.shadowBlur = 18;
+    ctx.beginPath();
+
+    const slice = data.length / w; // يرسم نقطة لكل px تقريبًا
+
+    for (let x = 0; x < w; x++) {
+      const i = Math.floor(x * slice);
+      const v = (data[i] - 128) / 128;     // -1..1
+      const y = mid + v * amp;
+
+      if (x === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.restore();
+
+    // خط رئيسي sharp فوق
+    ctx.save();
+    ctx.lineWidth = 2.5;
+    ctx.strokeStyle = grad;
+    ctx.beginPath();
+
+    for (let x = 0; x < w; x++) {
+      const i = Math.floor(x * slice);
+      const v = (data[i] - 128) / 128;
+      const y = mid + v * amp;
+
+      if (x === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.restore();
+
+    // خط center subtle
+    ctx.save();
+    ctx.strokeStyle = "rgba(255,255,255,0.06)";
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(0, mid);
+    ctx.lineTo(w, mid);
+    ctx.stroke();
+    ctx.restore();
+  };
+
+  function roundRect(ctx, x, y, w, h, r) {
+    r = Math.min(r, w / 2, h / 2);
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
+
+  // مهم: يبدأ بعد click (سياسات المتصفح)
+  btn.addEventListener("click", async () => {
+    await initVisualizer();
+    if (audioCtx.state === "suspended") await audioCtx.resume();
+    if (!raf) draw();
+  });
+
+})();
+</script>
+<script>
+  const modal = document.getElementById("vexoModal");
+  const modalVideo = document.getElementById("vexoModalVideo");
+
+  function openModal(src){
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    modalVideo.src = src;
+    modalVideo.play().catch(()=>{});
+  }
+
+  function closeModal(){
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    modalVideo.pause();
+    modalVideo.removeAttribute("src");
+    modalVideo.load();
+  }
+
+  document.querySelectorAll(".vexo-card__media").forEach(btn=>{
+    btn.addEventListener("click", () => openModal(btn.dataset.video));
+  });
+
+  modal.addEventListener("click", (e)=>{
+    if(e.target.dataset.close) closeModal();
+  });
+
+  document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
+  });
+</script>
+<script>
+  const longModal = document.getElementById("vexoLongModal");
+  const longModalVideo = document.getElementById("vexoLongModalVideo");
+
+  function openLong(src){
+    longModal.classList.add("is-open");
+    longModal.setAttribute("aria-hidden","false");
+    longModalVideo.src = src;
+    longModalVideo.play().catch(()=>{});
+  }
+
+  function closeLong(){
+    longModal.classList.remove("is-open");
+    longModal.setAttribute("aria-hidden","true");
+    longModalVideo.pause();
+    longModalVideo.removeAttribute("src");
+    longModalVideo.load();
+  }
+
+  document.querySelectorAll(".vexo-long__videoBtn").forEach(btn=>{
+    btn.addEventListener("click", ()=> openLong(btn.dataset.video));
+  });
+
+  longModal.addEventListener("click", (e)=>{
+    if(e.target.dataset.close) closeLong();
+  });
+
+  document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape" && longModal.classList.contains("is-open")) closeLong();
+  });
+
+  // Mobile Menu Toggle
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
+
+if (menuIcon && navbar) {
+    menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+        menuIcon.classList.toggle('bx-x');
+    });
+    
+    // Close menu when clicking on a link
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('active');
+            menuIcon.classList.remove('bx-x');
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navbar.contains(e.target) && !menuIcon.contains(e.target)) {
+            navbar.classList.remove('active');
+            menuIcon.classList.remove('bx-x');
+        }
+    });
+}
+
+// Handle responsive video modal sizes
+function adjustModalSize() {
+    const shortModal = document.querySelector('#vexoModal .vexo-modal__dialog');
+    const longModal = document.querySelector('#vexoLongModal .vexo-modal__dialog');
+    
+    if (window.innerWidth <= 768) {
+        // Mobile: Use full width for modals
+        if (shortModal) shortModal.style.width = '95vw';
+        if (longModal) longModal.style.width = '95vw';
+    } else {
+        // Desktop: Reset to original sizes
+        if (shortModal) shortModal.style.width = 'min(420px, 92vw)';
+        if (longModal) longModal.style.width = 'min(960px, 92vw)';
+    }
+}
+
+// Initialize modal sizes
+window.addEventListener('load', adjustModalSize);
+window.addEventListener('resize', adjustModalSize);
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            const targetPosition = targetElement.offsetTop - headerHeight;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
 });
 
-// Lazy loading (images + videos)
-document.addEventListener("DOMContentLoaded", () => {
-  const PLACEHOLDER =
-    "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-
-  // Images: use data-src
-  const imgs = document.querySelectorAll("img.lazy-img[data-src]");
-  // Videos: use data-src
-  const vids = document.querySelectorAll("video.lazy-video[data-src]");
-
-  const io = new IntersectionObserver(
-    (entries, obs) => {
-      for (const e of entries) {
-        if (!e.isIntersecting) continue;
-        const el = e.target;
-
-        if (el.tagName === "IMG") {
-          el.src = el.dataset.src;
-          el.removeAttribute("data-src");
-          el.classList.add("loaded");
+// Lazy loading for images
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+    
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src || img.src;
+                img.classList.add('loaded');
+                observer.unobserve(img);
+            }
+        });
+    });
+    
+    images.forEach(img => {
+        if (!img.classList.contains('no-lazy')) {
+            imageObserver.observe(img);
         }
-
-        if (el.tagName === "VIDEO") {
-          const src = el.dataset.src;
-          el.removeAttribute("data-src");
-
-          const s = document.createElement("source");
-          s.src = src;
-          s.type = "video/mp4";
-          el.appendChild(s);
-
-          el.load();
-        }
-
-        obs.unobserve(el);
-      }
-    },
-    { rootMargin: "250px 0px", threshold: 0.01 }
-  );
-
-  imgs.forEach((img) => {
-    if (!img.getAttribute("src")) img.src = PLACEHOLDER;
-    io.observe(img);
-  });
-
-  vids.forEach((v) => io.observe(v));
+    });
 });
 
 // Optimize for touch devices
 function optimizeForTouch() {
-  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-  if (isTouchDevice) {
-    document.querySelectorAll('.btn').forEach(btn => {
-      btn.style.minHeight = '44px';
-      btn.style.minWidth = '44px';
-    });
-  }
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    
+    if (isTouchDevice) {
+        // Increase tap targets
+        document.querySelectorAll('.btn, .vexo-btn, .audio-play').forEach(btn => {
+            btn.style.minHeight = '44px';
+            btn.style.minWidth = '44px';
+        });
+        
+        // Add touch feedback
+        document.querySelectorAll('.vexo-card__media, .vexo-long__videoBtn').forEach(btn => {
+            btn.addEventListener('touchstart', function() {
+                this.style.opacity = '0.8';
+            });
+            
+            btn.addEventListener('touchend', function() {
+                this.style.opacity = '1';
+            });
+        });
+    }
 }
-optimizeForTouch();
-</script>
 
-<!-- Existing modal logic (سيبه زي ما هو عندك لو شغال) -->
+window.addEventListener('load', optimizeForTouch);
+
+// Performance optimization on mobile
+if ('connection' in navigator) {
+    if (navigator.connection.saveData === true || navigator.connection.effectiveType.includes('2g')) {
+        // Disable autoplay for videos
+        document.querySelectorAll('video').forEach(video => {
+            video.removeAttribute('autoplay');
+            video.setAttribute('preload', 'none');
+        });
+        
+        // Use lower quality images
+        document.querySelectorAll('img[data-low-src]').forEach(img => {
+            img.src = img.dataset.lowSrc;
+        });
+    }
+}
+
+// Handle orientation changes
+let previousOrientation = window.orientation;
+window.addEventListener('orientationchange', function() {
+    if (window.orientation !== previousOrientation) {
+        setTimeout(() => {
+            location.reload();
+        }, 300);
+    }
+    previousOrientation = window.orientation;
+});
+
+// Update menu toggle function
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    menuIcon.classList.toggle('bx-x');
+    document.body.classList.toggle('menu-open');
+    
+    // Change icon
+    if (menuIcon.classList.contains('bx-x')) {
+        menuIcon.classList.remove('bx-menu');
+        menuIcon.classList.add('bx-x');
+    } else {
+        menuIcon.classList.remove('bx-x');
+        menuIcon.classList.add('bx-menu');
+    }
+});
+</script>
 <script>
-const modal = document.getElementById("vexoModal");
-const modalVideo = document.getElementById("vexoModalVideo");
-const closeBtn = document.querySelector(".vexo-close");
+  (function(){
+    const items = document.querySelectorAll(".faq-item");
 
-document.querySelectorAll(".vexo-open-modal").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const videoSrc = btn.getAttribute("data-video");
-    modal.style.display = "flex";
-    modalVideo.innerHTML = `<source src="${videoSrc}" type="video/mp4">`;
-    modalVideo.load();
-    modalVideo.play().catch(()=>{});
-  });
-});
+    items.forEach((item) => {
+      const btn = item.querySelector(".faq-q");
 
-closeBtn?.addEventListener("click", () => {
-  modal.style.display = "none";
-  modalVideo.pause();
-  modalVideo.innerHTML = "";
-});
+      btn.addEventListener("click", () => {
+        const isOpen = item.classList.contains("active");
 
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
-    modalVideo.pause();
-    modalVideo.innerHTML = "";
-  }
-});
+        // اقفل الكل
+        items.forEach(i => {
+          i.classList.remove("active");
+          i.querySelector(".faq-q").setAttribute("aria-expanded", "false");
+          i.querySelector(".faq-a").setAttribute("aria-hidden", "true");
+        });
+
+        // افتح الحالي لو كان مقفول
+        if (!isOpen) {
+          item.classList.add("active");
+          btn.setAttribute("aria-expanded", "true");
+          item.querySelector(".faq-a").setAttribute("aria-hidden", "false");
+        }
+      });
+    });
+  })();
 </script>
 
-<script>
-const longModal = document.getElementById("vexoLongModal");
-const longModalVideo = document.getElementById("vexoLongModalVideo");
-const longCloseBtn = document.querySelector(".vexo-long-close");
-
-document.querySelectorAll(".vexo-open-long-modal").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const videoSrc = btn.getAttribute("data-video");
-    longModal.style.display = "flex";
-    longModalVideo.innerHTML = `<source src="${videoSrc}" type="video/mp4">`;
-    longModalVideo.load();
-    longModalVideo.play().catch(()=>{});
-  });
-});
-
-longCloseBtn?.addEventListener("click", () => {
-  longModal.style.display = "none";
-  longModalVideo.pause();
-  longModalVideo.innerHTML = "";
-});
-
-window.addEventListener("click", (e) => {
-  if (e.target === longModal) {
-    longModal.style.display = "none";
-    longModalVideo.pause();
-    longModalVideo.innerHTML = "";
-  }
-});
-</script>
-
-<script src="main.js" defer></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
+
+
