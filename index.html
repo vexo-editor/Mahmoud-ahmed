@@ -886,9 +886,12 @@ document.addEventListener("DOMContentLoaded", function() {
     modalVideo.load();
   }
 
-  document.querySelectorAll(".vexo-card__media").forEach(btn=>{
-    btn.addEventListener("click", () => openModal(btn.dataset.video));
+document.querySelectorAll(".vexo-card__media").forEach(btn=>{
+  btn.addEventListener("click", () => {
+    const video = btn.querySelector("video source").src;
+    openModal(video);
   });
+});
 
   modal.addEventListener("click", (e)=>{
     if(e.target.dataset.close) closeModal();
